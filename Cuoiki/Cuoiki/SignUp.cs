@@ -13,7 +13,7 @@ namespace Cuoiki
 {
     public partial class SignUp : Form
     {
-        SqlConnection strcon = new SqlConnection(@"Data Source=LAPTOP-9FMJD3FN\SQLEXPRESS;Initial Catalog=ManagerAccount;Integrated Security=True");
+        SqlConnection strcon = new SqlConnection(@"Data Source=DESKTOP-5SRCC15\SQLEXPRESS;Initial Catalog=ManagerAccount;Integrated Security=True");
         public SignUp()
         {
             InitializeComponent();
