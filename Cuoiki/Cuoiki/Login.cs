@@ -18,38 +18,8 @@ namespace Cuoiki
             InitializeComponent();
         }
         SqlConnection strcon = new SqlConnection(@"Data Source=LAPTOP-9FMJD3FN\SQLEXPRESS;Initial Catalog=ManagerAccount;Integrated Security=True");
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        #region
-        private void gradient1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtBack_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbAccountLoginIn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
+           
         private void btLogin_Click(object sender, EventArgs e)
         {
             try
@@ -79,34 +49,7 @@ namespace Cuoiki
                 MessageBox.Show(e1.Message, "Error");
             }
         }
-
-        private void lbIntro_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        #endregion
-
-        private void txtPassword_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if(txtPassword.PasswordChar.ToString()== "●")
-            {
-                txtPassword.PasswordChar = '\0';
-            }
-            else
-            {
-                txtPassword.PasswordChar = '●';
-            }
-        }
+          
 
         private void btSignUp_Click(object sender, EventArgs e)
         {
@@ -120,9 +63,19 @@ namespace Cuoiki
             forgetPassword.ShowDialog();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void isShowPass_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (isShowPass.Checked)
+            {
+                if (txtPassword.PasswordChar.ToString() == "●")
+                {
+                    txtPassword.PasswordChar = '\0';
+                }
+                else
+                {
+                    txtPassword.PasswordChar = '●';
+                }
+            }
         }
     }
 }

@@ -31,12 +31,12 @@ namespace Cuoiki
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.gradient1 = new Cuoiki.Gradient();
+            this.isShowPass = new System.Windows.Forms.CheckBox();
             this.lbWrong = new System.Windows.Forms.Label();
             this.lbSuccessfully = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btForget = new System.Windows.Forms.Button();
             this.btSignUp = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -62,12 +62,12 @@ namespace Cuoiki
             this.gradient1.Angle = 0F;
             this.gradient1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(78)))), ((int)(((byte)(192)))));
             this.gradient1.BottomColor = System.Drawing.Color.Empty;
+            this.gradient1.Controls.Add(this.isShowPass);
             this.gradient1.Controls.Add(this.lbWrong);
             this.gradient1.Controls.Add(this.lbSuccessfully);
             this.gradient1.Controls.Add(this.pictureBox1);
             this.gradient1.Controls.Add(this.btForget);
             this.gradient1.Controls.Add(this.btSignUp);
-            this.gradient1.Controls.Add(this.button1);
             this.gradient1.Controls.Add(this.txtPassword);
             this.gradient1.Controls.Add(this.txtUsername);
             this.gradient1.Controls.Add(this.dataGridView2);
@@ -81,22 +81,32 @@ namespace Cuoiki
             this.gradient1.Controls.Add(this.txtBack);
             this.gradient1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradient1.Location = new System.Drawing.Point(0, 0);
-            this.gradient1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gradient1.Margin = new System.Windows.Forms.Padding(2);
             this.gradient1.Name = "gradient1";
-            this.gradient1.Size = new System.Drawing.Size(1320, 684);
+            this.gradient1.Size = new System.Drawing.Size(990, 556);
             this.gradient1.TabIndex = 2;
             this.gradient1.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(87)))), ((int)(((byte)(206)))));
-            this.gradient1.Paint += new System.Windows.Forms.PaintEventHandler(this.gradient1_Paint);
+            // 
+            // isShowPass
+            // 
+            this.isShowPass.AutoSize = true;
+            this.isShowPass.BackColor = System.Drawing.Color.White;
+            this.isShowPass.Location = new System.Drawing.Point(791, 341);
+            this.isShowPass.Name = "isShowPass";
+            this.isShowPass.Size = new System.Drawing.Size(101, 17);
+            this.isShowPass.TabIndex = 18;
+            this.isShowPass.Text = "Show password";
+            this.isShowPass.UseVisualStyleBackColor = false;
+            this.isShowPass.CheckedChanged += new System.EventHandler(this.isShowPass_CheckedChanged);
             // 
             // lbWrong
             // 
             this.lbWrong.BackColor = System.Drawing.Color.White;
             this.lbWrong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWrong.ForeColor = System.Drawing.Color.Red;
-            this.lbWrong.Location = new System.Drawing.Point(834, 518);
-            this.lbWrong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbWrong.Location = new System.Drawing.Point(613, 421);
             this.lbWrong.Name = "lbWrong";
-            this.lbWrong.Size = new System.Drawing.Size(223, 27);
+            this.lbWrong.Size = new System.Drawing.Size(167, 22);
             this.lbWrong.TabIndex = 17;
             this.lbWrong.Text = "Incorrect password !!!";
             this.lbWrong.Visible = false;
@@ -106,10 +116,9 @@ namespace Cuoiki
             this.lbSuccessfully.BackColor = System.Drawing.Color.White;
             this.lbSuccessfully.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSuccessfully.ForeColor = System.Drawing.Color.Lime;
-            this.lbSuccessfully.Location = new System.Drawing.Point(824, 518);
-            this.lbSuccessfully.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbSuccessfully.Location = new System.Drawing.Point(613, 421);
             this.lbSuccessfully.Name = "lbSuccessfully";
-            this.lbSuccessfully.Size = new System.Drawing.Size(223, 27);
+            this.lbSuccessfully.Size = new System.Drawing.Size(167, 22);
             this.lbSuccessfully.TabIndex = 17;
             this.lbSuccessfully.Text = "Logged in successfully !!!";
             this.lbSuccessfully.Visible = false;
@@ -118,10 +127,9 @@ namespace Cuoiki
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(123, 132);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(92, 107);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(493, 429);
+            this.pictureBox1.Size = new System.Drawing.Size(370, 349);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
@@ -132,12 +140,12 @@ namespace Cuoiki
             this.btForget.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btForget.FlatAppearance.BorderSize = 0;
             this.btForget.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btForget.Font = new System.Drawing.Font("Script MT Bold", 9.8F);
+            this.btForget.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btForget.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(90)))), ((int)(((byte)(153)))));
-            this.btForget.Location = new System.Drawing.Point(917, 550);
-            this.btForget.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btForget.Location = new System.Drawing.Point(688, 447);
+            this.btForget.Margin = new System.Windows.Forms.Padding(2);
             this.btForget.Name = "btForget";
-            this.btForget.Size = new System.Drawing.Size(268, 46);
+            this.btForget.Size = new System.Drawing.Size(201, 37);
             this.btForget.TabIndex = 15;
             this.btForget.Text = "Do you forget your password ?";
             this.btForget.UseVisualStyleBackColor = false;
@@ -149,58 +157,39 @@ namespace Cuoiki
             this.btSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btSignUp.FlatAppearance.BorderSize = 0;
             this.btSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSignUp.Font = new System.Drawing.Font("Script MT Bold", 9.8F);
+            this.btSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btSignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(90)))), ((int)(((byte)(153)))));
-            this.btSignUp.Location = new System.Drawing.Point(671, 549);
-            this.btSignUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btSignUp.Location = new System.Drawing.Point(495, 447);
+            this.btSignUp.Margin = new System.Windows.Forms.Padding(2);
             this.btSignUp.Name = "btSignUp";
-            this.btSignUp.Size = new System.Drawing.Size(241, 46);
+            this.btSignUp.Size = new System.Drawing.Size(181, 37);
             this.btSignUp.TabIndex = 14;
             this.btSignUp.Text = "Do you have not account ?";
             this.btSignUp.UseVisualStyleBackColor = false;
             this.btSignUp.Click += new System.EventHandler(this.btSignUp_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(90)))), ((int)(((byte)(153)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1068, 411);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 30);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Show/Hide";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.txtPassword.Location = new System.Drawing.Point(691, 375);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPassword.Location = new System.Drawing.Point(518, 305);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '●';
-            this.txtPassword.Size = new System.Drawing.Size(475, 27);
+            this.txtPassword.Size = new System.Drawing.Size(356, 21);
             this.txtPassword.TabIndex = 11;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged_1);
             // 
             // txtUsername
             // 
             this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.txtUsername.Location = new System.Drawing.Point(691, 276);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUsername.Location = new System.Drawing.Point(518, 224);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(475, 27);
+            this.txtUsername.Size = new System.Drawing.Size(356, 21);
             this.txtUsername.TabIndex = 10;
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -209,12 +198,12 @@ namespace Cuoiki
             this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(691, 366);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView2.Location = new System.Drawing.Point(518, 297);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(475, 46);
+            this.dataGridView2.Size = new System.Drawing.Size(356, 37);
             this.dataGridView2.TabIndex = 12;
             // 
             // dataGridView1
@@ -222,12 +211,12 @@ namespace Cuoiki
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(691, 266);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(518, 216);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(475, 46);
+            this.dataGridView1.Size = new System.Drawing.Size(356, 37);
             this.dataGridView1.TabIndex = 12;
             // 
             // label3
@@ -236,12 +225,12 @@ namespace Cuoiki
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(680, 101);
+            this.label3.Location = new System.Drawing.Point(510, 82);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(475, 29);
+            this.label3.Size = new System.Drawing.Size(373, 24);
             this.label3.TabIndex = 8;
             this.label3.Text = "AUTOMATIC MATERIAL MIXING SYSTEM";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // lbIntro
             // 
@@ -249,11 +238,11 @@ namespace Cuoiki
             this.lbIntro.BackColor = System.Drawing.Color.White;
             this.lbIntro.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.lbIntro.ForeColor = System.Drawing.Color.Blue;
-            this.lbIntro.Location = new System.Drawing.Point(680, 89);
+            this.lbIntro.Location = new System.Drawing.Point(510, 72);
+            this.lbIntro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbIntro.Name = "lbIntro";
-            this.lbIntro.Size = new System.Drawing.Size(0, 29);
+            this.lbIntro.Size = new System.Drawing.Size(0, 24);
             this.lbIntro.TabIndex = 6;
-            this.lbIntro.Click += new System.EventHandler(this.lbIntro_Click);
             // 
             // btLogin
             // 
@@ -261,12 +250,12 @@ namespace Cuoiki
             this.btLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btLogin.FlatAppearance.BorderSize = 0;
             this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btLogin.Font = new System.Drawing.Font("Quicksand Medium", 11.8F);
+            this.btLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.8F);
             this.btLogin.ForeColor = System.Drawing.Color.White;
-            this.btLogin.Location = new System.Drawing.Point(691, 447);
-            this.btLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btLogin.Location = new System.Drawing.Point(519, 373);
+            this.btLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btLogin.Name = "btLogin";
-            this.btLogin.Size = new System.Drawing.Size(477, 57);
+            this.btLogin.Size = new System.Drawing.Size(358, 46);
             this.btLogin.TabIndex = 5;
             this.btLogin.Text = "Login";
             this.btLogin.UseVisualStyleBackColor = false;
@@ -276,27 +265,27 @@ namespace Cuoiki
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Swis721 Lt BT", 10.8F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(688, 329);
+            this.label2.Location = new System.Drawing.Point(516, 267);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 22);
+            this.label2.Size = new System.Drawing.Size(75, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Password";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Swis721 Lt BT", 10.8F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(688, 228);
+            this.label1.Location = new System.Drawing.Point(516, 185);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 22);
+            this.label1.Size = new System.Drawing.Size(77, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "Username";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbAccountLoginIn
             // 
@@ -304,23 +293,22 @@ namespace Cuoiki
             this.lbAccountLoginIn.BackColor = System.Drawing.Color.White;
             this.lbAccountLoginIn.Font = new System.Drawing.Font("Siemens Slab", 15.8F, System.Drawing.FontStyle.Bold);
             this.lbAccountLoginIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
-            this.lbAccountLoginIn.Location = new System.Drawing.Point(684, 158);
+            this.lbAccountLoginIn.Location = new System.Drawing.Point(513, 128);
+            this.lbAccountLoginIn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAccountLoginIn.Name = "lbAccountLoginIn";
-            this.lbAccountLoginIn.Size = new System.Drawing.Size(199, 31);
+            this.lbAccountLoginIn.Size = new System.Drawing.Size(163, 25);
             this.lbAccountLoginIn.TabIndex = 0;
             this.lbAccountLoginIn.Text = "Account Login";
-            this.lbAccountLoginIn.Click += new System.EventHandler(this.lbAccountLoginIn_Click);
             // 
             // txtBack
             // 
             this.txtBack.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBack.Location = new System.Drawing.Point(75, 66);
-            this.txtBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBack.Location = new System.Drawing.Point(56, 54);
+            this.txtBack.Margin = new System.Windows.Forms.Padding(2);
             this.txtBack.Multiline = true;
             this.txtBack.Name = "txtBack";
-            this.txtBack.Size = new System.Drawing.Size(1160, 549);
+            this.txtBack.Size = new System.Drawing.Size(870, 446);
             this.txtBack.TabIndex = 1;
-            this.txtBack.TextChanged += new System.EventHandler(this.txtBack_TextChanged);
             // 
             // elipseControl1
             // 
@@ -339,18 +327,17 @@ namespace Cuoiki
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1320, 684);
+            this.ClientSize = new System.Drawing.Size(990, 556);
             this.Controls.Add(this.gradient1);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.gradient1.ResumeLayout(false);
             this.gradient1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -376,12 +363,12 @@ namespace Cuoiki
         private System.Windows.Forms.DataGridView dataGridView1;
         private ElipseControl elipseControl2;
         private ElipseControl elipseControl3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btSignUp;
         private System.Windows.Forms.Button btForget;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbSuccessfully;
         private System.Windows.Forms.Label lbWrong;
+        private System.Windows.Forms.CheckBox isShowPass;
     }
 }
 
