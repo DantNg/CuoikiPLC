@@ -59,19 +59,3 @@ C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cu
 C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.CopyComplete
 C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.exe
 C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.pdb
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\bin\Debug\Cuoiki.exe.config
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\bin\Debug\Cuoiki.exe
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\bin\Debug\Cuoiki.pdb
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\bin\Debug\S7.Net.xml
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.AssemblyReference.cache
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\obj\Debug\Cuoiki.ForgetPassword.resources
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\obj\Debug\Cuoiki.Login.resources
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\obj\Debug\Cuoiki.MainHMI.resources
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\obj\Debug\Cuoiki.Properties.Resources.resources
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\obj\Debug\Cuoiki.SignUp.resources
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\obj\Debug\Cuoiki.UserControl1.resources
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.GenerateResource.cache
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.CoreCompileInputs.cache
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.CopyComplete
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\obj\Debug\Cuoiki.exe
-D:\OneDrive\Máy tính\Cuoiki\Cuoiki\obj\Debug\Cuoiki.pdb
