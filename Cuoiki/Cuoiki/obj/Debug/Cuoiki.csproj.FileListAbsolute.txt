@@ -1,0 +1,61 @@
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\bin\Debug\Cuoiki.exe.config
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\bin\Debug\Cuoiki.exe
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\bin\Debug\Cuoiki.pdb
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.AssemblyReference.cache
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\obj\Debug\Cuoiki.Properties.Resources.resources
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.GenerateResource.cache
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\obj\Debug\Cuoiki.exe
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\obj\Debug\Cuoiki.pdb
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\obj\Debug\Cuoiki.UserControl1.resources
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\obj\Debug\Cuoiki.Login.resources
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\obj\Debug\Cuoiki.SignUp.resources
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\obj\Debug\Cuoiki.ForgetPassword.resources
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\bin\Debug\NetToolKit.dll
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\bin\Debug\SKCLNET.dll
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\bin\Debug\SymbolFactoryDotNet.dll
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\bin\Debug\SymbolFactoryNetEngine.dll
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\obj\Debug\Cuoiki.MainHMI.resources
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.CopyComplete
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\bin\Debug\S7.Net.dll
+C:\Users\ASUS\Downloads\Lập trình nâng cao\Cuoiki\Cuoiki\bin\Debug\S7.Net.xml
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\bin\Debug\Cuoiki.exe.config
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\bin\Debug\Cuoiki.exe
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\bin\Debug\Cuoiki.pdb
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\bin\Debug\NetToolKit.dll
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\bin\Debug\SKCLNET.dll
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\bin\Debug\SymbolFactoryDotNet.dll
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\bin\Debug\SymbolFactoryNetEngine.dll
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\bin\Debug\S7.Net.xml
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.AssemblyReference.cache
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\obj\Debug\Cuoiki.ForgetPassword.resources
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\obj\Debug\Cuoiki.Login.resources
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\obj\Debug\Cuoiki.MainHMI.resources
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\obj\Debug\Cuoiki.Properties.Resources.resources
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\obj\Debug\Cuoiki.SignUp.resources
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\obj\Debug\Cuoiki.UserControl1.resources
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.GenerateResource.cache
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.CoreCompileInputs.cache
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.CopyComplete
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\obj\Debug\Cuoiki.exe
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì\Cuoiki\Cuoiki\obj\Debug\Cuoiki.pdb
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\bin\Debug\Cuoiki.exe.config
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\bin\Debug\Cuoiki.exe
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\bin\Debug\Cuoiki.pdb
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\bin\Debug\NetToolKit.dll
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\bin\Debug\SKCLNET.dll
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\bin\Debug\SymbolFactoryDotNet.dll
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\bin\Debug\SymbolFactoryNetEngine.dll
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\bin\Debug\S7.Net.xml
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.AssemblyReference.cache
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.ForgetPassword.resources
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.Login.resources
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.MainHMI.resources
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.Properties.Resources.resources
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.SignUp.resources
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.UserControl1.resources
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.GenerateResource.cache
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.CoreCompileInputs.cache
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.csproj.CopyComplete
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.exe
+C:\Users\Minh\Downloads\Lập trình nâng cao\Cuối kì cân nguyên liệu\Cuoiki\Cuoiki\obj\Debug\Cuoiki.pdb
