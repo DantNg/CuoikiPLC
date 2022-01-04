@@ -18,8 +18,8 @@ namespace Cuoiki
             InitializeComponent();
         }
         SqlConnection strcon = new SqlConnection(@"Data Source=DESKTOP-5SRCC15\SQLEXPRESS;Initial Catalog=ManagerAccount;Integrated Security=True");
-       
 
+        bool openHMI = false;
         private void btLogin_Click(object sender, EventArgs e)
         {
             try
@@ -32,17 +32,21 @@ namespace Cuoiki
                 {
                     lbSuccessfully.Visible = true;
                     lbWrong.Visible = false;
+                    openHMI = true;
                     MainHMI mainHMI = new MainHMI();
                     mainHMI.ShowDialog();
+                    
                 }
                 else
                 {
                     lbSuccessfully.Visible = false;
                     lbWrong.Visible = true;
+                    openHMI = false;
                 }
                 reader.Close();
                 if (strcon.State == ConnectionState.Open)
                     strcon.Close();
+               if( openHMI) this.Close();
             }
             catch (Exception e1)
             {

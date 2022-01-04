@@ -170,14 +170,16 @@ namespace Cuoiki
             this.stSensorMixTankHight = new SymbolFactoryDotNet.StandardControl();
             this.btSensorMixTankHight = new System.Windows.Forms.Button();
             this.btSensorMixTankLow = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.connectIpBtn = new System.Windows.Forms.Button();
             this.label40 = new System.Windows.Forms.Label();
             this.Disconnected = new System.Windows.Forms.Label();
             this.Connected = new System.Windows.Forms.Label();
             this.ipEntryBox = new System.Windows.Forms.TextBox();
+            this.progressBarOfRice = new System.Windows.Forms.ProgressBar();
+            this.progressBarCorn = new System.Windows.Forms.ProgressBar();
+            this.progressBarOfCassava = new System.Windows.Forms.ProgressBar();
+            this.progressBarOfBean = new System.Windows.Forms.ProgressBar();
+            this.progressBarOfFish = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.stXiloRice1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stXiloRice2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stXiloRice3)).BeginInit();
@@ -258,10 +260,9 @@ namespace Cuoiki
             this.label3.BackColor = System.Drawing.Color.Blue;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(526, 43);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(701, 53);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(373, 24);
+            this.label3.Size = new System.Drawing.Size(475, 29);
             this.label3.TabIndex = 9;
             this.label3.Text = "AUTOMATIC MATERIAL MIXING SYSTEM";
             // 
@@ -277,10 +278,10 @@ namespace Cuoiki
             this.stXiloRice1.Category = "1TANK.cat2";
             this.stXiloRice1.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloRice1.DebugData"));
             this.stXiloRice1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloRice1.Location = new System.Drawing.Point(22, 150);
-            this.stXiloRice1.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloRice1.Location = new System.Drawing.Point(29, 185);
+            this.stXiloRice1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloRice1.Name = "stXiloRice1";
-            this.stXiloRice1.Size = new System.Drawing.Size(58, 96);
+            this.stXiloRice1.Size = new System.Drawing.Size(77, 118);
             this.stXiloRice1.Stretch = true;
             this.stXiloRice1.SymbolHandle = ((long)(460587677));
             this.stXiloRice1.TabIndex = 10;
@@ -297,10 +298,10 @@ namespace Cuoiki
             this.stXiloRice2.Category = "1TANK.cat2";
             this.stXiloRice2.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloRice2.DebugData"));
             this.stXiloRice2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloRice2.Location = new System.Drawing.Point(86, 150);
-            this.stXiloRice2.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloRice2.Location = new System.Drawing.Point(115, 185);
+            this.stXiloRice2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloRice2.Name = "stXiloRice2";
-            this.stXiloRice2.Size = new System.Drawing.Size(58, 96);
+            this.stXiloRice2.Size = new System.Drawing.Size(77, 118);
             this.stXiloRice2.Stretch = true;
             this.stXiloRice2.SymbolHandle = ((long)(460587677));
             this.stXiloRice2.TabIndex = 10;
@@ -317,10 +318,10 @@ namespace Cuoiki
             this.stXiloRice3.Category = "1TANK.cat2";
             this.stXiloRice3.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloRice3.DebugData"));
             this.stXiloRice3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloRice3.Location = new System.Drawing.Point(148, 150);
-            this.stXiloRice3.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloRice3.Location = new System.Drawing.Point(197, 185);
+            this.stXiloRice3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloRice3.Name = "stXiloRice3";
-            this.stXiloRice3.Size = new System.Drawing.Size(58, 96);
+            this.stXiloRice3.Size = new System.Drawing.Size(77, 118);
             this.stXiloRice3.Stretch = true;
             this.stXiloRice3.SymbolHandle = ((long)(460587677));
             this.stXiloRice3.TabIndex = 10;
@@ -337,10 +338,10 @@ namespace Cuoiki
             this.stXiloCorn4.Category = "1TANK.cat2";
             this.stXiloCorn4.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloCorn4.DebugData"));
             this.stXiloCorn4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloCorn4.Location = new System.Drawing.Point(236, 150);
-            this.stXiloCorn4.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloCorn4.Location = new System.Drawing.Point(315, 185);
+            this.stXiloCorn4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloCorn4.Name = "stXiloCorn4";
-            this.stXiloCorn4.Size = new System.Drawing.Size(58, 96);
+            this.stXiloCorn4.Size = new System.Drawing.Size(77, 118);
             this.stXiloCorn4.Stretch = true;
             this.stXiloCorn4.SymbolHandle = ((long)(460587677));
             this.stXiloCorn4.TabIndex = 10;
@@ -357,10 +358,10 @@ namespace Cuoiki
             this.stXiloCorn5.Category = "1TANK.cat2";
             this.stXiloCorn5.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloCorn5.DebugData"));
             this.stXiloCorn5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloCorn5.Location = new System.Drawing.Point(298, 150);
-            this.stXiloCorn5.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloCorn5.Location = new System.Drawing.Point(397, 185);
+            this.stXiloCorn5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloCorn5.Name = "stXiloCorn5";
-            this.stXiloCorn5.Size = new System.Drawing.Size(58, 96);
+            this.stXiloCorn5.Size = new System.Drawing.Size(77, 118);
             this.stXiloCorn5.Stretch = true;
             this.stXiloCorn5.SymbolHandle = ((long)(460587677));
             this.stXiloCorn5.TabIndex = 10;
@@ -377,10 +378,10 @@ namespace Cuoiki
             this.stXiloCorn6.Category = "1TANK.cat2";
             this.stXiloCorn6.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloCorn6.DebugData"));
             this.stXiloCorn6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloCorn6.Location = new System.Drawing.Point(362, 150);
-            this.stXiloCorn6.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloCorn6.Location = new System.Drawing.Point(483, 185);
+            this.stXiloCorn6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloCorn6.Name = "stXiloCorn6";
-            this.stXiloCorn6.Size = new System.Drawing.Size(58, 96);
+            this.stXiloCorn6.Size = new System.Drawing.Size(77, 118);
             this.stXiloCorn6.Stretch = true;
             this.stXiloCorn6.SymbolHandle = ((long)(460587677));
             this.stXiloCorn6.TabIndex = 10;
@@ -397,10 +398,10 @@ namespace Cuoiki
             this.stXiloCorn7.Category = "1TANK.cat2";
             this.stXiloCorn7.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloCorn7.DebugData"));
             this.stXiloCorn7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloCorn7.Location = new System.Drawing.Point(424, 150);
-            this.stXiloCorn7.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloCorn7.Location = new System.Drawing.Point(565, 185);
+            this.stXiloCorn7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloCorn7.Name = "stXiloCorn7";
-            this.stXiloCorn7.Size = new System.Drawing.Size(58, 96);
+            this.stXiloCorn7.Size = new System.Drawing.Size(77, 118);
             this.stXiloCorn7.Stretch = true;
             this.stXiloCorn7.SymbolHandle = ((long)(460587677));
             this.stXiloCorn7.TabIndex = 10;
@@ -417,10 +418,10 @@ namespace Cuoiki
             this.stXiloCassava8.Category = "1TANK.cat2";
             this.stXiloCassava8.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloCassava8.DebugData"));
             this.stXiloCassava8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloCassava8.Location = new System.Drawing.Point(518, 150);
-            this.stXiloCassava8.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloCassava8.Location = new System.Drawing.Point(691, 185);
+            this.stXiloCassava8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloCassava8.Name = "stXiloCassava8";
-            this.stXiloCassava8.Size = new System.Drawing.Size(58, 96);
+            this.stXiloCassava8.Size = new System.Drawing.Size(77, 118);
             this.stXiloCassava8.Stretch = true;
             this.stXiloCassava8.SymbolHandle = ((long)(460587677));
             this.stXiloCassava8.TabIndex = 10;
@@ -437,10 +438,10 @@ namespace Cuoiki
             this.stXiloCassava9.Category = "1TANK.cat2";
             this.stXiloCassava9.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloCassava9.DebugData"));
             this.stXiloCassava9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloCassava9.Location = new System.Drawing.Point(580, 150);
-            this.stXiloCassava9.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloCassava9.Location = new System.Drawing.Point(773, 185);
+            this.stXiloCassava9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloCassava9.Name = "stXiloCassava9";
-            this.stXiloCassava9.Size = new System.Drawing.Size(58, 96);
+            this.stXiloCassava9.Size = new System.Drawing.Size(77, 118);
             this.stXiloCassava9.Stretch = true;
             this.stXiloCassava9.SymbolHandle = ((long)(460587677));
             this.stXiloCassava9.TabIndex = 10;
@@ -457,10 +458,10 @@ namespace Cuoiki
             this.stXiloFish13.Category = "1TANK.cat2";
             this.stXiloFish13.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloFish13.DebugData"));
             this.stXiloFish13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloFish13.Location = new System.Drawing.Point(872, 150);
-            this.stXiloFish13.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloFish13.Location = new System.Drawing.Point(1163, 185);
+            this.stXiloFish13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloFish13.Name = "stXiloFish13";
-            this.stXiloFish13.Size = new System.Drawing.Size(58, 96);
+            this.stXiloFish13.Size = new System.Drawing.Size(77, 118);
             this.stXiloFish13.Stretch = true;
             this.stXiloFish13.SymbolHandle = ((long)(460587677));
             this.stXiloFish13.TabIndex = 10;
@@ -477,10 +478,10 @@ namespace Cuoiki
             this.stXiloFish14.Category = "1TANK.cat2";
             this.stXiloFish14.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloFish14.DebugData"));
             this.stXiloFish14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloFish14.Location = new System.Drawing.Point(934, 150);
-            this.stXiloFish14.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloFish14.Location = new System.Drawing.Point(1245, 185);
+            this.stXiloFish14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloFish14.Name = "stXiloFish14";
-            this.stXiloFish14.Size = new System.Drawing.Size(58, 96);
+            this.stXiloFish14.Size = new System.Drawing.Size(77, 118);
             this.stXiloFish14.Stretch = true;
             this.stXiloFish14.SymbolHandle = ((long)(460587677));
             this.stXiloFish14.TabIndex = 10;
@@ -497,10 +498,10 @@ namespace Cuoiki
             this.stXiloFish15.Category = "1TANK.cat2";
             this.stXiloFish15.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloFish15.DebugData"));
             this.stXiloFish15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloFish15.Location = new System.Drawing.Point(998, 150);
-            this.stXiloFish15.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloFish15.Location = new System.Drawing.Point(1331, 185);
+            this.stXiloFish15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloFish15.Name = "stXiloFish15";
-            this.stXiloFish15.Size = new System.Drawing.Size(58, 96);
+            this.stXiloFish15.Size = new System.Drawing.Size(77, 118);
             this.stXiloFish15.Stretch = true;
             this.stXiloFish15.SymbolHandle = ((long)(460587677));
             this.stXiloFish15.TabIndex = 10;
@@ -518,10 +519,10 @@ namespace Cuoiki
             this.stControlOn.Category = "1Btn.cat2";
             this.stControlOn.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stControlOn.DebugData"));
             this.stControlOn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stControlOn.Location = new System.Drawing.Point(1407, 86);
-            this.stControlOn.Margin = new System.Windows.Forms.Padding(2);
+            this.stControlOn.Location = new System.Drawing.Point(1876, 106);
+            this.stControlOn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stControlOn.Name = "stControlOn";
-            this.stControlOn.Size = new System.Drawing.Size(62, 67);
+            this.stControlOn.Size = new System.Drawing.Size(83, 82);
             this.stControlOn.Stretch = true;
             this.stControlOn.SymbolHandle = ((long)(842488176));
             this.stControlOn.TabIndex = 10;
@@ -538,10 +539,10 @@ namespace Cuoiki
             this.stXiloBean10.Category = "1TANK.cat2";
             this.stXiloBean10.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloBean10.DebugData"));
             this.stXiloBean10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloBean10.Location = new System.Drawing.Point(654, 150);
-            this.stXiloBean10.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloBean10.Location = new System.Drawing.Point(872, 185);
+            this.stXiloBean10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloBean10.Name = "stXiloBean10";
-            this.stXiloBean10.Size = new System.Drawing.Size(58, 96);
+            this.stXiloBean10.Size = new System.Drawing.Size(77, 118);
             this.stXiloBean10.Stretch = true;
             this.stXiloBean10.SymbolHandle = ((long)(460587677));
             this.stXiloBean10.TabIndex = 10;
@@ -558,10 +559,10 @@ namespace Cuoiki
             this.stXiloBean11.Category = "1TANK.cat2";
             this.stXiloBean11.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloBean11.DebugData"));
             this.stXiloBean11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloBean11.Location = new System.Drawing.Point(718, 150);
-            this.stXiloBean11.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloBean11.Location = new System.Drawing.Point(957, 185);
+            this.stXiloBean11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloBean11.Name = "stXiloBean11";
-            this.stXiloBean11.Size = new System.Drawing.Size(58, 96);
+            this.stXiloBean11.Size = new System.Drawing.Size(77, 118);
             this.stXiloBean11.Stretch = true;
             this.stXiloBean11.SymbolHandle = ((long)(460587677));
             this.stXiloBean11.TabIndex = 10;
@@ -578,10 +579,10 @@ namespace Cuoiki
             this.stXiloBean12.Category = "1TANK.cat2";
             this.stXiloBean12.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloBean12.DebugData"));
             this.stXiloBean12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stXiloBean12.Location = new System.Drawing.Point(780, 150);
-            this.stXiloBean12.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloBean12.Location = new System.Drawing.Point(1040, 185);
+            this.stXiloBean12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloBean12.Name = "stXiloBean12";
-            this.stXiloBean12.Size = new System.Drawing.Size(58, 96);
+            this.stXiloBean12.Size = new System.Drawing.Size(77, 118);
             this.stXiloBean12.Stretch = true;
             this.stXiloBean12.SymbolHandle = ((long)(460587677));
             this.stXiloBean12.TabIndex = 10;
@@ -603,10 +604,10 @@ namespace Cuoiki
             this.standardControl1.Category = "1PIPE.cat2";
             this.standardControl1.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl1.DebugData"));
             this.standardControl1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl1.Location = new System.Drawing.Point(46, 232);
-            this.standardControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl1.Location = new System.Drawing.Point(61, 286);
+            this.standardControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl1.Name = "standardControl1";
-            this.standardControl1.Size = new System.Drawing.Size(14, 138);
+            this.standardControl1.Size = new System.Drawing.Size(19, 170);
             this.standardControl1.Stretch = true;
             this.standardControl1.SymbolHandle = ((long)(1088408125));
             this.standardControl1.TabIndex = 10;
@@ -628,10 +629,10 @@ namespace Cuoiki
             this.standardControl2.Category = "1PIPE.cat2";
             this.standardControl2.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl2.DebugData"));
             this.standardControl2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl2.Location = new System.Drawing.Point(46, 362);
-            this.standardControl2.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl2.Location = new System.Drawing.Point(61, 446);
+            this.standardControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl2.Name = "standardControl2";
-            this.standardControl2.Size = new System.Drawing.Size(26, 29);
+            this.standardControl2.Size = new System.Drawing.Size(35, 36);
             this.standardControl2.Stretch = true;
             this.standardControl2.SymbolHandle = ((long)(328113829));
             this.standardControl2.TabIndex = 10;
@@ -653,10 +654,10 @@ namespace Cuoiki
             this.standardControl3.Category = "1PIPE.cat2";
             this.standardControl3.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl3.DebugData"));
             this.standardControl3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl3.Location = new System.Drawing.Point(602, 232);
-            this.standardControl3.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl3.Location = new System.Drawing.Point(803, 286);
+            this.standardControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl3.Name = "standardControl3";
-            this.standardControl3.Size = new System.Drawing.Size(14, 138);
+            this.standardControl3.Size = new System.Drawing.Size(19, 170);
             this.standardControl3.Stretch = true;
             this.standardControl3.SymbolHandle = ((long)(1088408125));
             this.standardControl3.TabIndex = 10;
@@ -678,11 +679,11 @@ namespace Cuoiki
             this.standardControl4.Category = "1PIPE.cat2";
             this.standardControl4.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl4.DebugData"));
             this.standardControl4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl4.Location = new System.Drawing.Point(1072, 360);
-            this.standardControl4.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl4.Location = new System.Drawing.Point(1429, 443);
+            this.standardControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl4.Name = "standardControl4";
             this.standardControl4.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.standardControl4.Size = new System.Drawing.Size(24, 32);
+            this.standardControl4.Size = new System.Drawing.Size(32, 39);
             this.standardControl4.Stretch = true;
             this.standardControl4.SymbolHandle = ((long)(328113829));
             this.standardControl4.TabIndex = 10;
@@ -704,10 +705,10 @@ namespace Cuoiki
             this.standardControl5.Category = "1PIPE.cat2";
             this.standardControl5.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl5.DebugData"));
             this.standardControl5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl5.Location = new System.Drawing.Point(108, 232);
-            this.standardControl5.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl5.Location = new System.Drawing.Point(144, 286);
+            this.standardControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl5.Name = "standardControl5";
-            this.standardControl5.Size = new System.Drawing.Size(14, 138);
+            this.standardControl5.Size = new System.Drawing.Size(19, 170);
             this.standardControl5.Stretch = true;
             this.standardControl5.SymbolHandle = ((long)(1088408125));
             this.standardControl5.TabIndex = 10;
@@ -729,10 +730,10 @@ namespace Cuoiki
             this.standardControl6.Category = "1PIPE.cat2";
             this.standardControl6.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl6.DebugData"));
             this.standardControl6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl6.Location = new System.Drawing.Point(102, 362);
-            this.standardControl6.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl6.Location = new System.Drawing.Point(136, 446);
+            this.standardControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl6.Name = "standardControl6";
-            this.standardControl6.Size = new System.Drawing.Size(26, 29);
+            this.standardControl6.Size = new System.Drawing.Size(35, 36);
             this.standardControl6.Stretch = true;
             this.standardControl6.SymbolHandle = ((long)(1005195368));
             this.standardControl6.TabIndex = 10;
@@ -754,10 +755,10 @@ namespace Cuoiki
             this.standardControl7.Category = "1PIPE.cat2";
             this.standardControl7.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl7.DebugData"));
             this.standardControl7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl7.Location = new System.Drawing.Point(172, 232);
-            this.standardControl7.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl7.Location = new System.Drawing.Point(229, 286);
+            this.standardControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl7.Name = "standardControl7";
-            this.standardControl7.Size = new System.Drawing.Size(14, 138);
+            this.standardControl7.Size = new System.Drawing.Size(19, 170);
             this.standardControl7.Stretch = true;
             this.standardControl7.SymbolHandle = ((long)(1088408125));
             this.standardControl7.TabIndex = 10;
@@ -779,10 +780,10 @@ namespace Cuoiki
             this.standardControl8.Category = "1PIPE.cat2";
             this.standardControl8.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl8.DebugData"));
             this.standardControl8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl8.Location = new System.Drawing.Point(166, 362);
-            this.standardControl8.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl8.Location = new System.Drawing.Point(221, 446);
+            this.standardControl8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl8.Name = "standardControl8";
-            this.standardControl8.Size = new System.Drawing.Size(26, 29);
+            this.standardControl8.Size = new System.Drawing.Size(35, 36);
             this.standardControl8.Stretch = true;
             this.standardControl8.SymbolHandle = ((long)(1005195368));
             this.standardControl8.TabIndex = 10;
@@ -804,10 +805,10 @@ namespace Cuoiki
             this.standardControl9.Category = "1PIPE.cat2";
             this.standardControl9.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl9.DebugData"));
             this.standardControl9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl9.Location = new System.Drawing.Point(258, 232);
-            this.standardControl9.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl9.Location = new System.Drawing.Point(344, 286);
+            this.standardControl9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl9.Name = "standardControl9";
-            this.standardControl9.Size = new System.Drawing.Size(14, 138);
+            this.standardControl9.Size = new System.Drawing.Size(19, 170);
             this.standardControl9.Stretch = true;
             this.standardControl9.SymbolHandle = ((long)(1088408125));
             this.standardControl9.TabIndex = 10;
@@ -829,10 +830,10 @@ namespace Cuoiki
             this.standardControl10.Category = "1PIPE.cat2";
             this.standardControl10.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl10.DebugData"));
             this.standardControl10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl10.Location = new System.Drawing.Point(252, 362);
-            this.standardControl10.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl10.Location = new System.Drawing.Point(336, 446);
+            this.standardControl10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl10.Name = "standardControl10";
-            this.standardControl10.Size = new System.Drawing.Size(26, 29);
+            this.standardControl10.Size = new System.Drawing.Size(35, 36);
             this.standardControl10.Stretch = true;
             this.standardControl10.SymbolHandle = ((long)(1005195368));
             this.standardControl10.TabIndex = 10;
@@ -854,10 +855,10 @@ namespace Cuoiki
             this.standardControl11.Category = "1PIPE.cat2";
             this.standardControl11.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl11.DebugData"));
             this.standardControl11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl11.Location = new System.Drawing.Point(322, 232);
-            this.standardControl11.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl11.Location = new System.Drawing.Point(429, 286);
+            this.standardControl11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl11.Name = "standardControl11";
-            this.standardControl11.Size = new System.Drawing.Size(14, 138);
+            this.standardControl11.Size = new System.Drawing.Size(19, 170);
             this.standardControl11.Stretch = true;
             this.standardControl11.SymbolHandle = ((long)(1088408125));
             this.standardControl11.TabIndex = 10;
@@ -879,10 +880,10 @@ namespace Cuoiki
             this.standardControl12.Category = "1PIPE.cat2";
             this.standardControl12.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl12.DebugData"));
             this.standardControl12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl12.Location = new System.Drawing.Point(316, 362);
-            this.standardControl12.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl12.Location = new System.Drawing.Point(421, 446);
+            this.standardControl12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl12.Name = "standardControl12";
-            this.standardControl12.Size = new System.Drawing.Size(26, 29);
+            this.standardControl12.Size = new System.Drawing.Size(35, 36);
             this.standardControl12.Stretch = true;
             this.standardControl12.SymbolHandle = ((long)(1005195368));
             this.standardControl12.TabIndex = 10;
@@ -904,10 +905,10 @@ namespace Cuoiki
             this.standardControl13.Category = "1PIPE.cat2";
             this.standardControl13.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl13.DebugData"));
             this.standardControl13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl13.Location = new System.Drawing.Point(384, 232);
-            this.standardControl13.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl13.Location = new System.Drawing.Point(512, 286);
+            this.standardControl13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl13.Name = "standardControl13";
-            this.standardControl13.Size = new System.Drawing.Size(14, 138);
+            this.standardControl13.Size = new System.Drawing.Size(19, 170);
             this.standardControl13.Stretch = true;
             this.standardControl13.SymbolHandle = ((long)(1088408125));
             this.standardControl13.TabIndex = 10;
@@ -929,10 +930,10 @@ namespace Cuoiki
             this.standardControl14.Category = "1PIPE.cat2";
             this.standardControl14.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl14.DebugData"));
             this.standardControl14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl14.Location = new System.Drawing.Point(378, 362);
-            this.standardControl14.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl14.Location = new System.Drawing.Point(504, 446);
+            this.standardControl14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl14.Name = "standardControl14";
-            this.standardControl14.Size = new System.Drawing.Size(26, 29);
+            this.standardControl14.Size = new System.Drawing.Size(35, 36);
             this.standardControl14.Stretch = true;
             this.standardControl14.SymbolHandle = ((long)(1005195368));
             this.standardControl14.TabIndex = 10;
@@ -954,10 +955,10 @@ namespace Cuoiki
             this.standardControl15.Category = "1PIPE.cat2";
             this.standardControl15.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl15.DebugData"));
             this.standardControl15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl15.Location = new System.Drawing.Point(446, 232);
-            this.standardControl15.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl15.Location = new System.Drawing.Point(595, 286);
+            this.standardControl15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl15.Name = "standardControl15";
-            this.standardControl15.Size = new System.Drawing.Size(14, 138);
+            this.standardControl15.Size = new System.Drawing.Size(19, 170);
             this.standardControl15.Stretch = true;
             this.standardControl15.SymbolHandle = ((long)(1088408125));
             this.standardControl15.TabIndex = 10;
@@ -979,10 +980,10 @@ namespace Cuoiki
             this.standardControl16.Category = "1PIPE.cat2";
             this.standardControl16.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl16.DebugData"));
             this.standardControl16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl16.Location = new System.Drawing.Point(440, 362);
-            this.standardControl16.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl16.Location = new System.Drawing.Point(587, 446);
+            this.standardControl16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl16.Name = "standardControl16";
-            this.standardControl16.Size = new System.Drawing.Size(26, 29);
+            this.standardControl16.Size = new System.Drawing.Size(35, 36);
             this.standardControl16.Stretch = true;
             this.standardControl16.SymbolHandle = ((long)(1005195368));
             this.standardControl16.TabIndex = 10;
@@ -1004,10 +1005,10 @@ namespace Cuoiki
             this.standardControl17.Category = "1PIPE.cat2";
             this.standardControl17.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl17.DebugData"));
             this.standardControl17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl17.Location = new System.Drawing.Point(540, 232);
-            this.standardControl17.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl17.Location = new System.Drawing.Point(720, 286);
+            this.standardControl17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl17.Name = "standardControl17";
-            this.standardControl17.Size = new System.Drawing.Size(14, 138);
+            this.standardControl17.Size = new System.Drawing.Size(19, 170);
             this.standardControl17.Stretch = true;
             this.standardControl17.SymbolHandle = ((long)(1088408125));
             this.standardControl17.TabIndex = 10;
@@ -1029,10 +1030,10 @@ namespace Cuoiki
             this.standardControl18.Category = "1PIPE.cat2";
             this.standardControl18.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl18.DebugData"));
             this.standardControl18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl18.Location = new System.Drawing.Point(534, 362);
-            this.standardControl18.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl18.Location = new System.Drawing.Point(712, 446);
+            this.standardControl18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl18.Name = "standardControl18";
-            this.standardControl18.Size = new System.Drawing.Size(26, 29);
+            this.standardControl18.Size = new System.Drawing.Size(35, 36);
             this.standardControl18.Stretch = true;
             this.standardControl18.SymbolHandle = ((long)(1005195368));
             this.standardControl18.TabIndex = 10;
@@ -1054,10 +1055,10 @@ namespace Cuoiki
             this.standardControl19.Category = "1PIPE.cat2";
             this.standardControl19.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl19.DebugData"));
             this.standardControl19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl19.Location = new System.Drawing.Point(62, 377);
-            this.standardControl19.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl19.Location = new System.Drawing.Point(83, 464);
+            this.standardControl19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl19.Name = "standardControl19";
-            this.standardControl19.Size = new System.Drawing.Size(532, 15);
+            this.standardControl19.Size = new System.Drawing.Size(709, 18);
             this.standardControl19.Stretch = true;
             this.standardControl19.SymbolHandle = ((long)(2078383901));
             this.standardControl19.TabIndex = 10;
@@ -1079,10 +1080,10 @@ namespace Cuoiki
             this.standardControl20.Category = "1PIPE.cat2";
             this.standardControl20.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl20.DebugData"));
             this.standardControl20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl20.Location = new System.Drawing.Point(676, 232);
-            this.standardControl20.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl20.Location = new System.Drawing.Point(901, 286);
+            this.standardControl20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl20.Name = "standardControl20";
-            this.standardControl20.Size = new System.Drawing.Size(14, 138);
+            this.standardControl20.Size = new System.Drawing.Size(19, 170);
             this.standardControl20.Stretch = true;
             this.standardControl20.SymbolHandle = ((long)(1088408125));
             this.standardControl20.TabIndex = 10;
@@ -1104,10 +1105,10 @@ namespace Cuoiki
             this.standardControl21.Category = "1PIPE.cat2";
             this.standardControl21.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl21.DebugData"));
             this.standardControl21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl21.Location = new System.Drawing.Point(740, 232);
-            this.standardControl21.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl21.Location = new System.Drawing.Point(987, 286);
+            this.standardControl21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl21.Name = "standardControl21";
-            this.standardControl21.Size = new System.Drawing.Size(14, 138);
+            this.standardControl21.Size = new System.Drawing.Size(19, 170);
             this.standardControl21.Stretch = true;
             this.standardControl21.SymbolHandle = ((long)(1088408125));
             this.standardControl21.TabIndex = 10;
@@ -1129,10 +1130,10 @@ namespace Cuoiki
             this.standardControl22.Category = "1PIPE.cat2";
             this.standardControl22.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl22.DebugData"));
             this.standardControl22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl22.Location = new System.Drawing.Point(802, 232);
-            this.standardControl22.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl22.Location = new System.Drawing.Point(1069, 286);
+            this.standardControl22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl22.Name = "standardControl22";
-            this.standardControl22.Size = new System.Drawing.Size(14, 138);
+            this.standardControl22.Size = new System.Drawing.Size(19, 170);
             this.standardControl22.Stretch = true;
             this.standardControl22.SymbolHandle = ((long)(1088408125));
             this.standardControl22.TabIndex = 10;
@@ -1154,10 +1155,10 @@ namespace Cuoiki
             this.standardControl23.Category = "1PIPE.cat2";
             this.standardControl23.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl23.DebugData"));
             this.standardControl23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl23.Location = new System.Drawing.Point(692, 378);
-            this.standardControl23.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl23.Location = new System.Drawing.Point(923, 465);
+            this.standardControl23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl23.Name = "standardControl23";
-            this.standardControl23.Size = new System.Drawing.Size(388, 15);
+            this.standardControl23.Size = new System.Drawing.Size(517, 18);
             this.standardControl23.Stretch = true;
             this.standardControl23.SymbolHandle = ((long)(2078383901));
             this.standardControl23.TabIndex = 10;
@@ -1179,10 +1180,10 @@ namespace Cuoiki
             this.standardControl24.Category = "1PIPE.cat2";
             this.standardControl24.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl24.DebugData"));
             this.standardControl24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl24.Location = new System.Drawing.Point(894, 232);
-            this.standardControl24.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl24.Location = new System.Drawing.Point(1192, 286);
+            this.standardControl24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl24.Name = "standardControl24";
-            this.standardControl24.Size = new System.Drawing.Size(14, 138);
+            this.standardControl24.Size = new System.Drawing.Size(19, 170);
             this.standardControl24.Stretch = true;
             this.standardControl24.SymbolHandle = ((long)(1088408125));
             this.standardControl24.TabIndex = 10;
@@ -1204,10 +1205,10 @@ namespace Cuoiki
             this.standardControl25.Category = "1PIPE.cat2";
             this.standardControl25.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl25.DebugData"));
             this.standardControl25.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl25.Location = new System.Drawing.Point(958, 232);
-            this.standardControl25.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl25.Location = new System.Drawing.Point(1277, 286);
+            this.standardControl25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl25.Name = "standardControl25";
-            this.standardControl25.Size = new System.Drawing.Size(14, 138);
+            this.standardControl25.Size = new System.Drawing.Size(19, 170);
             this.standardControl25.Stretch = true;
             this.standardControl25.SymbolHandle = ((long)(1088408125));
             this.standardControl25.TabIndex = 10;
@@ -1229,10 +1230,10 @@ namespace Cuoiki
             this.standardControl26.Category = "1PIPE.cat2";
             this.standardControl26.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl26.DebugData"));
             this.standardControl26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl26.Location = new System.Drawing.Point(1020, 232);
-            this.standardControl26.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl26.Location = new System.Drawing.Point(1360, 286);
+            this.standardControl26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl26.Name = "standardControl26";
-            this.standardControl26.Size = new System.Drawing.Size(14, 138);
+            this.standardControl26.Size = new System.Drawing.Size(19, 170);
             this.standardControl26.Stretch = true;
             this.standardControl26.SymbolHandle = ((long)(1088408125));
             this.standardControl26.TabIndex = 10;
@@ -1254,10 +1255,10 @@ namespace Cuoiki
             this.standardControl27.Category = "1PIPE.cat2";
             this.standardControl27.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl27.DebugData"));
             this.standardControl27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl27.Location = new System.Drawing.Point(1084, 232);
-            this.standardControl27.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl27.Location = new System.Drawing.Point(1445, 286);
+            this.standardControl27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl27.Name = "standardControl27";
-            this.standardControl27.Size = new System.Drawing.Size(14, 138);
+            this.standardControl27.Size = new System.Drawing.Size(19, 170);
             this.standardControl27.Stretch = true;
             this.standardControl27.SymbolHandle = ((long)(1088408125));
             this.standardControl27.TabIndex = 10;
@@ -1279,10 +1280,10 @@ namespace Cuoiki
             this.standardControl28.Category = "1PIPE.cat2";
             this.standardControl28.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl28.DebugData"));
             this.standardControl28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl28.Location = new System.Drawing.Point(676, 363);
-            this.standardControl28.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl28.Location = new System.Drawing.Point(901, 447);
+            this.standardControl28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl28.Name = "standardControl28";
-            this.standardControl28.Size = new System.Drawing.Size(26, 29);
+            this.standardControl28.Size = new System.Drawing.Size(35, 36);
             this.standardControl28.Stretch = true;
             this.standardControl28.SymbolHandle = ((long)(328113829));
             this.standardControl28.TabIndex = 10;
@@ -1304,10 +1305,10 @@ namespace Cuoiki
             this.standardControl29.Category = "1PIPE.cat2";
             this.standardControl29.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl29.DebugData"));
             this.standardControl29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl29.Location = new System.Drawing.Point(734, 363);
-            this.standardControl29.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl29.Location = new System.Drawing.Point(979, 447);
+            this.standardControl29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl29.Name = "standardControl29";
-            this.standardControl29.Size = new System.Drawing.Size(26, 29);
+            this.standardControl29.Size = new System.Drawing.Size(35, 36);
             this.standardControl29.Stretch = true;
             this.standardControl29.SymbolHandle = ((long)(1005195368));
             this.standardControl29.TabIndex = 10;
@@ -1329,10 +1330,10 @@ namespace Cuoiki
             this.standardControl30.Category = "1PIPE.cat2";
             this.standardControl30.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl30.DebugData"));
             this.standardControl30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl30.Location = new System.Drawing.Point(796, 363);
-            this.standardControl30.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl30.Location = new System.Drawing.Point(1061, 447);
+            this.standardControl30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl30.Name = "standardControl30";
-            this.standardControl30.Size = new System.Drawing.Size(26, 29);
+            this.standardControl30.Size = new System.Drawing.Size(35, 36);
             this.standardControl30.Stretch = true;
             this.standardControl30.SymbolHandle = ((long)(1005195368));
             this.standardControl30.TabIndex = 10;
@@ -1354,10 +1355,10 @@ namespace Cuoiki
             this.standardControl31.Category = "1PIPE.cat2";
             this.standardControl31.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl31.DebugData"));
             this.standardControl31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl31.Location = new System.Drawing.Point(888, 363);
-            this.standardControl31.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl31.Location = new System.Drawing.Point(1184, 447);
+            this.standardControl31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl31.Name = "standardControl31";
-            this.standardControl31.Size = new System.Drawing.Size(26, 29);
+            this.standardControl31.Size = new System.Drawing.Size(35, 36);
             this.standardControl31.Stretch = true;
             this.standardControl31.SymbolHandle = ((long)(1005195368));
             this.standardControl31.TabIndex = 10;
@@ -1379,10 +1380,10 @@ namespace Cuoiki
             this.standardControl32.Category = "1PIPE.cat2";
             this.standardControl32.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl32.DebugData"));
             this.standardControl32.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl32.Location = new System.Drawing.Point(952, 363);
-            this.standardControl32.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl32.Location = new System.Drawing.Point(1269, 447);
+            this.standardControl32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl32.Name = "standardControl32";
-            this.standardControl32.Size = new System.Drawing.Size(26, 29);
+            this.standardControl32.Size = new System.Drawing.Size(35, 36);
             this.standardControl32.Stretch = true;
             this.standardControl32.SymbolHandle = ((long)(1005195368));
             this.standardControl32.TabIndex = 10;
@@ -1404,10 +1405,10 @@ namespace Cuoiki
             this.standardControl33.Category = "1PIPE.cat2";
             this.standardControl33.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl33.DebugData"));
             this.standardControl33.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl33.Location = new System.Drawing.Point(1014, 363);
-            this.standardControl33.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl33.Location = new System.Drawing.Point(1352, 447);
+            this.standardControl33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl33.Name = "standardControl33";
-            this.standardControl33.Size = new System.Drawing.Size(26, 29);
+            this.standardControl33.Size = new System.Drawing.Size(35, 36);
             this.standardControl33.Stretch = true;
             this.standardControl33.SymbolHandle = ((long)(1005195368));
             this.standardControl33.TabIndex = 10;
@@ -1429,11 +1430,11 @@ namespace Cuoiki
             this.standardControl34.Category = "1PIPE.cat2";
             this.standardControl34.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl34.DebugData"));
             this.standardControl34.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl34.Location = new System.Drawing.Point(592, 360);
-            this.standardControl34.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl34.Location = new System.Drawing.Point(789, 443);
+            this.standardControl34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl34.Name = "standardControl34";
             this.standardControl34.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.standardControl34.Size = new System.Drawing.Size(24, 32);
+            this.standardControl34.Size = new System.Drawing.Size(32, 39);
             this.standardControl34.Stretch = true;
             this.standardControl34.SymbolHandle = ((long)(328113829));
             this.standardControl34.TabIndex = 10;
@@ -1455,10 +1456,10 @@ namespace Cuoiki
             this.standardControl35.Category = "1SCL.cat2";
             this.standardControl35.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl35.DebugData"));
             this.standardControl35.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl35.Location = new System.Drawing.Point(280, 467);
-            this.standardControl35.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl35.Location = new System.Drawing.Point(373, 575);
+            this.standardControl35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl35.Name = "standardControl35";
-            this.standardControl35.Size = new System.Drawing.Size(194, 108);
+            this.standardControl35.Size = new System.Drawing.Size(259, 133);
             this.standardControl35.Stretch = true;
             this.standardControl35.SymbolHandle = ((long)(624410972));
             this.standardControl35.TabIndex = 10;
@@ -1480,10 +1481,10 @@ namespace Cuoiki
             this.standardControl36.Category = "1SCL.cat2";
             this.standardControl36.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl36.DebugData"));
             this.standardControl36.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl36.Location = new System.Drawing.Point(766, 467);
-            this.standardControl36.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl36.Location = new System.Drawing.Point(1021, 575);
+            this.standardControl36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl36.Name = "standardControl36";
-            this.standardControl36.Size = new System.Drawing.Size(194, 108);
+            this.standardControl36.Size = new System.Drawing.Size(259, 133);
             this.standardControl36.Stretch = true;
             this.standardControl36.SymbolHandle = ((long)(624410972));
             this.standardControl36.TabIndex = 10;
@@ -1505,11 +1506,11 @@ namespace Cuoiki
             this.standardControl37.Category = "1PIPE.cat2";
             this.standardControl37.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl37.DebugData"));
             this.standardControl37.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl37.Location = new System.Drawing.Point(344, 377);
-            this.standardControl37.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl37.Location = new System.Drawing.Point(459, 464);
+            this.standardControl37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl37.Name = "standardControl37";
             this.standardControl37.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate180;
-            this.standardControl37.Size = new System.Drawing.Size(34, 29);
+            this.standardControl37.Size = new System.Drawing.Size(45, 36);
             this.standardControl37.Stretch = true;
             this.standardControl37.SymbolHandle = ((long)(1005195368));
             this.standardControl37.TabIndex = 10;
@@ -1531,10 +1532,10 @@ namespace Cuoiki
             this.standardControl39.Category = "1PIPE.cat2";
             this.standardControl39.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl39.DebugData"));
             this.standardControl39.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl39.Location = new System.Drawing.Point(352, 401);
-            this.standardControl39.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl39.Location = new System.Drawing.Point(469, 494);
+            this.standardControl39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl39.Name = "standardControl39";
-            this.standardControl39.Size = new System.Drawing.Size(16, 92);
+            this.standardControl39.Size = new System.Drawing.Size(21, 113);
             this.standardControl39.Stretch = true;
             this.standardControl39.SymbolHandle = ((long)(1088408125));
             this.standardControl39.TabIndex = 10;
@@ -1556,10 +1557,10 @@ namespace Cuoiki
             this.standardControl40.Category = "1PIPE.cat2";
             this.standardControl40.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl40.DebugData"));
             this.standardControl40.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl40.Location = new System.Drawing.Point(844, 397);
-            this.standardControl40.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl40.Location = new System.Drawing.Point(1125, 489);
+            this.standardControl40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl40.Name = "standardControl40";
-            this.standardControl40.Size = new System.Drawing.Size(16, 92);
+            this.standardControl40.Size = new System.Drawing.Size(21, 113);
             this.standardControl40.Stretch = true;
             this.standardControl40.SymbolHandle = ((long)(1088408125));
             this.standardControl40.TabIndex = 10;
@@ -1581,11 +1582,11 @@ namespace Cuoiki
             this.standardControl41.Category = "1PIPE.cat2";
             this.standardControl41.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl41.DebugData"));
             this.standardControl41.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl41.Location = new System.Drawing.Point(836, 377);
-            this.standardControl41.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl41.Location = new System.Drawing.Point(1115, 464);
+            this.standardControl41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl41.Name = "standardControl41";
             this.standardControl41.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate180;
-            this.standardControl41.Size = new System.Drawing.Size(34, 29);
+            this.standardControl41.Size = new System.Drawing.Size(45, 36);
             this.standardControl41.Stretch = true;
             this.standardControl41.SymbolHandle = ((long)(1005195368));
             this.standardControl41.TabIndex = 10;
@@ -1607,10 +1608,10 @@ namespace Cuoiki
             this.standardControl38.Category = "1TANK.cat2";
             this.standardControl38.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl38.DebugData"));
             this.standardControl38.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl38.Location = new System.Drawing.Point(566, 595);
-            this.standardControl38.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl38.Location = new System.Drawing.Point(755, 732);
+            this.standardControl38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl38.Name = "standardControl38";
-            this.standardControl38.Size = new System.Drawing.Size(190, 144);
+            this.standardControl38.Size = new System.Drawing.Size(253, 177);
             this.standardControl38.Stretch = true;
             this.standardControl38.SymbolHandle = ((long)(483841513));
             this.standardControl38.TabIndex = 10;
@@ -1632,10 +1633,10 @@ namespace Cuoiki
             this.standardControl42.Category = "1PIPE.cat2";
             this.standardControl42.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl42.DebugData"));
             this.standardControl42.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl42.Location = new System.Drawing.Point(300, 504);
-            this.standardControl42.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl42.Location = new System.Drawing.Point(400, 620);
+            this.standardControl42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl42.Name = "standardControl42";
-            this.standardControl42.Size = new System.Drawing.Size(296, 21);
+            this.standardControl42.Size = new System.Drawing.Size(395, 26);
             this.standardControl42.Stretch = true;
             this.standardControl42.SymbolHandle = ((long)(2078383901));
             this.standardControl42.TabIndex = 10;
@@ -1657,10 +1658,10 @@ namespace Cuoiki
             this.standardControl43.Category = "1PIPE.cat2";
             this.standardControl43.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl43.DebugData"));
             this.standardControl43.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl43.Location = new System.Drawing.Point(722, 504);
-            this.standardControl43.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl43.Location = new System.Drawing.Point(963, 620);
+            this.standardControl43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl43.Name = "standardControl43";
-            this.standardControl43.Size = new System.Drawing.Size(74, 21);
+            this.standardControl43.Size = new System.Drawing.Size(99, 26);
             this.standardControl43.Stretch = true;
             this.standardControl43.SymbolHandle = ((long)(2078383901));
             this.standardControl43.TabIndex = 10;
@@ -1677,10 +1678,10 @@ namespace Cuoiki
             this.stMixMotor.Category = "1MXR.cat2";
             this.stMixMotor.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stMixMotor.DebugData"));
             this.stMixMotor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stMixMotor.Location = new System.Drawing.Point(640, 429);
-            this.stMixMotor.Margin = new System.Windows.Forms.Padding(2);
+            this.stMixMotor.Location = new System.Drawing.Point(853, 528);
+            this.stMixMotor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stMixMotor.Name = "stMixMotor";
-            this.stMixMotor.Size = new System.Drawing.Size(92, 241);
+            this.stMixMotor.Size = new System.Drawing.Size(123, 297);
             this.stMixMotor.Stretch = true;
             this.stMixMotor.SymbolHandle = ((long)(1333014208));
             this.stMixMotor.TabIndex = 10;
@@ -1702,11 +1703,11 @@ namespace Cuoiki
             this.standardControl44.Category = "1PIPE.cat2";
             this.standardControl44.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl44.DebugData"));
             this.standardControl44.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl44.Location = new System.Drawing.Point(692, 504);
-            this.standardControl44.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl44.Location = new System.Drawing.Point(923, 620);
+            this.standardControl44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl44.Name = "standardControl44";
             this.standardControl44.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.standardControl44.Size = new System.Drawing.Size(40, 41);
+            this.standardControl44.Size = new System.Drawing.Size(53, 50);
             this.standardControl44.Stretch = true;
             this.standardControl44.SymbolHandle = ((long)(1564703331));
             this.standardControl44.TabIndex = 10;
@@ -1728,10 +1729,10 @@ namespace Cuoiki
             this.standardControl46.Category = "1PIPE.cat2";
             this.standardControl46.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl46.DebugData"));
             this.standardControl46.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl46.Location = new System.Drawing.Point(692, 532);
-            this.standardControl46.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl46.Location = new System.Drawing.Point(923, 655);
+            this.standardControl46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl46.Name = "standardControl46";
-            this.standardControl46.Size = new System.Drawing.Size(20, 138);
+            this.standardControl46.Size = new System.Drawing.Size(27, 170);
             this.standardControl46.Stretch = true;
             this.standardControl46.SymbolHandle = ((long)(1088408125));
             this.standardControl46.TabIndex = 10;
@@ -1753,10 +1754,10 @@ namespace Cuoiki
             this.standardControl47.Category = "1PIPE.cat2";
             this.standardControl47.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl47.DebugData"));
             this.standardControl47.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl47.Location = new System.Drawing.Point(615, 543);
-            this.standardControl47.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl47.Location = new System.Drawing.Point(820, 668);
+            this.standardControl47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl47.Name = "standardControl47";
-            this.standardControl47.Size = new System.Drawing.Size(22, 138);
+            this.standardControl47.Size = new System.Drawing.Size(29, 170);
             this.standardControl47.Stretch = true;
             this.standardControl47.SymbolHandle = ((long)(1088408125));
             this.standardControl47.TabIndex = 10;
@@ -1778,10 +1779,10 @@ namespace Cuoiki
             this.standardControl48.Category = "1PIPE.cat2";
             this.standardControl48.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl48.DebugData"));
             this.standardControl48.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl48.Location = new System.Drawing.Point(596, 504);
-            this.standardControl48.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl48.Location = new System.Drawing.Point(795, 620);
+            this.standardControl48.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl48.Name = "standardControl48";
-            this.standardControl48.Size = new System.Drawing.Size(40, 41);
+            this.standardControl48.Size = new System.Drawing.Size(53, 50);
             this.standardControl48.Stretch = true;
             this.standardControl48.SymbolHandle = ((long)(1564703331));
             this.standardControl48.TabIndex = 10;
@@ -1789,22 +1790,22 @@ namespace Cuoiki
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(1136, 27);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Location = new System.Drawing.Point(1515, 33);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(362, 738);
+            this.textBox1.Size = new System.Drawing.Size(483, 908);
             this.textBox1.TabIndex = 11;
             // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.Lime;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(1136, 27);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Location = new System.Drawing.Point(1515, 33);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(362, 38);
+            this.textBox2.Size = new System.Drawing.Size(483, 47);
             this.textBox2.TabIndex = 12;
             // 
             // label1
@@ -1813,10 +1814,9 @@ namespace Cuoiki
             this.label1.BackColor = System.Drawing.Color.Lime;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(1240, 34);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(1653, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 24);
+            this.label1.Size = new System.Drawing.Size(221, 29);
             this.label1.TabIndex = 13;
             this.label1.Text = "BẢNG ĐIỀU KHIỂN";
             // 
@@ -1825,10 +1825,10 @@ namespace Cuoiki
             this.btOn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btOn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btOn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btOn.Location = new System.Drawing.Point(1161, 86);
-            this.btOn.Margin = new System.Windows.Forms.Padding(2);
+            this.btOn.Location = new System.Drawing.Point(1548, 106);
+            this.btOn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btOn.Name = "btOn";
-            this.btOn.Size = new System.Drawing.Size(94, 25);
+            this.btOn.Size = new System.Drawing.Size(125, 31);
             this.btOn.TabIndex = 16;
             this.btOn.Text = "ON";
             this.btOn.UseVisualStyleBackColor = false;
@@ -1839,10 +1839,10 @@ namespace Cuoiki
             this.btOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btOff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btOff.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btOff.Location = new System.Drawing.Point(1161, 129);
-            this.btOff.Margin = new System.Windows.Forms.Padding(2);
+            this.btOff.Location = new System.Drawing.Point(1548, 159);
+            this.btOff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btOff.Name = "btOff";
-            this.btOff.Size = new System.Drawing.Size(94, 25);
+            this.btOff.Size = new System.Drawing.Size(125, 31);
             this.btOff.TabIndex = 17;
             this.btOff.Text = "OFF";
             this.btOff.UseVisualStyleBackColor = false;
@@ -1852,11 +1852,11 @@ namespace Cuoiki
             // 
             this.textBox3.BackColor = System.Drawing.Color.Lime;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(1136, 171);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Location = new System.Drawing.Point(1515, 210);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(362, 38);
+            this.textBox3.Size = new System.Drawing.Size(483, 47);
             this.textBox3.TabIndex = 12;
             // 
             // label2
@@ -1865,10 +1865,9 @@ namespace Cuoiki
             this.label2.BackColor = System.Drawing.Color.Lime;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(1240, 179);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(1653, 220);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 24);
+            this.label2.Size = new System.Drawing.Size(227, 29);
             this.label2.TabIndex = 13;
             this.label2.Text = "GIÁM SÁT DỮ DIỆU";
             // 
@@ -1877,10 +1876,9 @@ namespace Cuoiki
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label4.Location = new System.Drawing.Point(1159, 219);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(1545, 270);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 18);
+            this.label4.Size = new System.Drawing.Size(182, 24);
             this.label4.TabIndex = 18;
             this.label4.Text = "Nhập công thức trộn";
             // 
@@ -1889,10 +1887,9 @@ namespace Cuoiki
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label5.Location = new System.Drawing.Point(1159, 256);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(1545, 315);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 18);
+            this.label5.Size = new System.Drawing.Size(101, 24);
             this.label5.TabIndex = 18;
             this.label5.Text = "Lượng gạo";
             // 
@@ -1901,10 +1898,9 @@ namespace Cuoiki
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label6.Location = new System.Drawing.Point(1159, 283);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(1545, 348);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 18);
+            this.label6.Size = new System.Drawing.Size(102, 24);
             this.label6.TabIndex = 18;
             this.label6.Text = "Lượng ngô";
             // 
@@ -1913,10 +1909,9 @@ namespace Cuoiki
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label7.Location = new System.Drawing.Point(1159, 310);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(1545, 382);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 18);
+            this.label7.Size = new System.Drawing.Size(99, 24);
             this.label7.TabIndex = 18;
             this.label7.Text = "Lượng sắn";
             // 
@@ -1925,10 +1920,9 @@ namespace Cuoiki
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label8.Location = new System.Drawing.Point(1157, 336);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(1543, 414);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 18);
+            this.label8.Size = new System.Drawing.Size(102, 24);
             this.label8.TabIndex = 18;
             this.label8.Text = "Lượng đậu";
             // 
@@ -1937,10 +1931,9 @@ namespace Cuoiki
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label9.Location = new System.Drawing.Point(1159, 362);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(1545, 446);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 18);
+            this.label9.Size = new System.Drawing.Size(89, 24);
             this.label9.TabIndex = 18;
             this.label9.Text = "Lượng cá";
             // 
@@ -1949,10 +1942,9 @@ namespace Cuoiki
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.White;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label15.Location = new System.Drawing.Point(1361, 256);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(1815, 315);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(26, 18);
+            this.label15.Size = new System.Drawing.Size(33, 24);
             this.label15.TabIndex = 18;
             this.label15.Text = "Kg";
             // 
@@ -1961,10 +1953,9 @@ namespace Cuoiki
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.White;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label16.Location = new System.Drawing.Point(1361, 283);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(1815, 348);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(26, 18);
+            this.label16.Size = new System.Drawing.Size(33, 24);
             this.label16.TabIndex = 18;
             this.label16.Text = "Kg";
             // 
@@ -1973,10 +1964,9 @@ namespace Cuoiki
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.White;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label17.Location = new System.Drawing.Point(1361, 310);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Location = new System.Drawing.Point(1815, 382);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(26, 18);
+            this.label17.Size = new System.Drawing.Size(33, 24);
             this.label17.TabIndex = 18;
             this.label17.Text = "Kg";
             // 
@@ -1985,10 +1975,9 @@ namespace Cuoiki
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.White;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label18.Location = new System.Drawing.Point(1360, 336);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Location = new System.Drawing.Point(1813, 414);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(26, 18);
+            this.label18.Size = new System.Drawing.Size(33, 24);
             this.label18.TabIndex = 18;
             this.label18.Text = "Kg";
             // 
@@ -1997,10 +1986,9 @@ namespace Cuoiki
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.White;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label19.Location = new System.Drawing.Point(1361, 362);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Location = new System.Drawing.Point(1815, 446);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(26, 18);
+            this.label19.Size = new System.Drawing.Size(33, 24);
             this.label19.TabIndex = 18;
             this.label19.Text = "Kg";
             // 
@@ -2009,10 +1997,9 @@ namespace Cuoiki
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.White;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label20.Location = new System.Drawing.Point(1159, 517);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Location = new System.Drawing.Point(1545, 636);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(127, 18);
+            this.label20.Size = new System.Drawing.Size(165, 24);
             this.label20.TabIndex = 18;
             this.label20.Text = "Trọng lượng cân 1";
             // 
@@ -2021,10 +2008,9 @@ namespace Cuoiki
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.White;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label21.Location = new System.Drawing.Point(1373, 517);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Location = new System.Drawing.Point(1831, 636);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(26, 18);
+            this.label21.Size = new System.Drawing.Size(33, 24);
             this.label21.TabIndex = 18;
             this.label21.Text = "Kg";
             // 
@@ -2033,10 +2019,9 @@ namespace Cuoiki
             this.lbScale1.AutoSize = true;
             this.lbScale1.BackColor = System.Drawing.Color.White;
             this.lbScale1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.lbScale1.Location = new System.Drawing.Point(1304, 517);
-            this.lbScale1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbScale1.Location = new System.Drawing.Point(1739, 636);
             this.lbScale1.Name = "lbScale1";
-            this.lbScale1.Size = new System.Drawing.Size(44, 18);
+            this.lbScale1.Size = new System.Drawing.Size(55, 24);
             this.lbScale1.TabIndex = 18;
             this.lbScale1.Text = "0.000";
             // 
@@ -2045,10 +2030,9 @@ namespace Cuoiki
             this.lbScale2.AutoSize = true;
             this.lbScale2.BackColor = System.Drawing.Color.White;
             this.lbScale2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.lbScale2.Location = new System.Drawing.Point(1304, 544);
-            this.lbScale2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbScale2.Location = new System.Drawing.Point(1739, 670);
             this.lbScale2.Name = "lbScale2";
-            this.lbScale2.Size = new System.Drawing.Size(44, 18);
+            this.lbScale2.Size = new System.Drawing.Size(55, 24);
             this.lbScale2.TabIndex = 18;
             this.lbScale2.Text = "0.000";
             // 
@@ -2057,10 +2041,9 @@ namespace Cuoiki
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.White;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label27.Location = new System.Drawing.Point(1159, 544);
-            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label27.Location = new System.Drawing.Point(1545, 670);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(127, 18);
+            this.label27.Size = new System.Drawing.Size(165, 24);
             this.label27.TabIndex = 18;
             this.label27.Text = "Trọng lượng cân 2";
             // 
@@ -2069,10 +2052,9 @@ namespace Cuoiki
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.White;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label28.Location = new System.Drawing.Point(1373, 544);
-            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label28.Location = new System.Drawing.Point(1831, 670);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(26, 18);
+            this.label28.Size = new System.Drawing.Size(33, 24);
             this.label28.TabIndex = 18;
             this.label28.Text = "Kg";
             // 
@@ -2081,10 +2063,9 @@ namespace Cuoiki
             this.label35.AutoSize = true;
             this.label35.BackColor = System.Drawing.Color.White;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label35.Location = new System.Drawing.Point(1159, 479);
-            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label35.Location = new System.Drawing.Point(1545, 590);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(129, 18);
+            this.label35.Size = new System.Drawing.Size(166, 24);
             this.label35.TabIndex = 18;
             this.label35.Text = "Dữ liệu cân thực tế";
             // 
@@ -2096,57 +2077,57 @@ namespace Cuoiki
             this.btEnablePourToScale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEnablePourToScale.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.btEnablePourToScale.ForeColor = System.Drawing.Color.Red;
-            this.btEnablePourToScale.Location = new System.Drawing.Point(1160, 429);
-            this.btEnablePourToScale.Margin = new System.Windows.Forms.Padding(2);
+            this.btEnablePourToScale.Location = new System.Drawing.Point(1547, 528);
+            this.btEnablePourToScale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btEnablePourToScale.Name = "btEnablePourToScale";
-            this.btEnablePourToScale.Size = new System.Drawing.Size(196, 32);
+            this.btEnablePourToScale.Size = new System.Drawing.Size(133, 39);
             this.btEnablePourToScale.TabIndex = 19;
-            this.btEnablePourToScale.Text = "Xác nhận và khời động";
+            this.btEnablePourToScale.Text = "Xác nhận ";
             this.btEnablePourToScale.UseVisualStyleBackColor = false;
             this.btEnablePourToScale.Click += new System.EventHandler(this.btEnablePourToScale_Click);
             // 
             // txtInputRice
             // 
-            this.txtInputRice.Location = new System.Drawing.Point(1264, 258);
-            this.txtInputRice.Margin = new System.Windows.Forms.Padding(2);
+            this.txtInputRice.Location = new System.Drawing.Point(1685, 318);
+            this.txtInputRice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtInputRice.Name = "txtInputRice";
-            this.txtInputRice.Size = new System.Drawing.Size(76, 20);
+            this.txtInputRice.Size = new System.Drawing.Size(100, 22);
             this.txtInputRice.TabIndex = 20;
             this.txtInputRice.Text = "0";
             // 
             // txtInputCorn
             // 
-            this.txtInputCorn.Location = new System.Drawing.Point(1264, 284);
-            this.txtInputCorn.Margin = new System.Windows.Forms.Padding(2);
+            this.txtInputCorn.Location = new System.Drawing.Point(1685, 350);
+            this.txtInputCorn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtInputCorn.Name = "txtInputCorn";
-            this.txtInputCorn.Size = new System.Drawing.Size(76, 20);
+            this.txtInputCorn.Size = new System.Drawing.Size(100, 22);
             this.txtInputCorn.TabIndex = 20;
             this.txtInputCorn.Text = "0";
             // 
             // txtInputCassava
             // 
-            this.txtInputCassava.Location = new System.Drawing.Point(1264, 312);
-            this.txtInputCassava.Margin = new System.Windows.Forms.Padding(2);
+            this.txtInputCassava.Location = new System.Drawing.Point(1685, 384);
+            this.txtInputCassava.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtInputCassava.Name = "txtInputCassava";
-            this.txtInputCassava.Size = new System.Drawing.Size(76, 20);
+            this.txtInputCassava.Size = new System.Drawing.Size(100, 22);
             this.txtInputCassava.TabIndex = 20;
             this.txtInputCassava.Text = "0";
             // 
             // txtInputBean
             // 
-            this.txtInputBean.Location = new System.Drawing.Point(1264, 338);
-            this.txtInputBean.Margin = new System.Windows.Forms.Padding(2);
+            this.txtInputBean.Location = new System.Drawing.Point(1685, 416);
+            this.txtInputBean.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtInputBean.Name = "txtInputBean";
-            this.txtInputBean.Size = new System.Drawing.Size(76, 20);
+            this.txtInputBean.Size = new System.Drawing.Size(100, 22);
             this.txtInputBean.TabIndex = 20;
             this.txtInputBean.Text = "0";
             // 
             // txtInputFish
             // 
-            this.txtInputFish.Location = new System.Drawing.Point(1264, 364);
-            this.txtInputFish.Margin = new System.Windows.Forms.Padding(2);
+            this.txtInputFish.Location = new System.Drawing.Point(1685, 448);
+            this.txtInputFish.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtInputFish.Name = "txtInputFish";
-            this.txtInputFish.Size = new System.Drawing.Size(76, 20);
+            this.txtInputFish.Size = new System.Drawing.Size(100, 22);
             this.txtInputFish.TabIndex = 20;
             this.txtInputFish.Text = "0";
             // 
@@ -2162,10 +2143,10 @@ namespace Cuoiki
             this.stXiloFish16.Category = "1TANK.cat2";
             this.stXiloFish16.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stXiloFish16.DebugData"));
             this.stXiloFish16.FillColor = System.Drawing.Color.Lime;
-            this.stXiloFish16.Location = new System.Drawing.Point(1060, 150);
-            this.stXiloFish16.Margin = new System.Windows.Forms.Padding(2);
+            this.stXiloFish16.Location = new System.Drawing.Point(1413, 185);
+            this.stXiloFish16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stXiloFish16.Name = "stXiloFish16";
-            this.stXiloFish16.Size = new System.Drawing.Size(58, 96);
+            this.stXiloFish16.Size = new System.Drawing.Size(77, 118);
             this.stXiloFish16.Stretch = true;
             this.stXiloFish16.SymbolHandle = ((long)(460587677));
             this.stXiloFish16.TabIndex = 10;
@@ -2176,10 +2157,9 @@ namespace Cuoiki
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(78, 108);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(111, 123);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 18);
+            this.label10.Size = new System.Drawing.Size(83, 24);
             this.label10.TabIndex = 18;
             this.label10.Text = "Xilo Gạo";
             // 
@@ -2189,10 +2169,9 @@ namespace Cuoiki
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(326, 108);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(425, 123);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 18);
+            this.label11.Size = new System.Drawing.Size(84, 24);
             this.label11.TabIndex = 18;
             this.label11.Text = "Xilo Ngô";
             // 
@@ -2202,10 +2181,9 @@ namespace Cuoiki
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(548, 108);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(740, 123);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 18);
+            this.label12.Size = new System.Drawing.Size(81, 24);
             this.label12.TabIndex = 18;
             this.label12.Text = "Xilo Sắn";
             // 
@@ -2215,10 +2193,9 @@ namespace Cuoiki
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(714, 108);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(953, 123);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 18);
+            this.label13.Size = new System.Drawing.Size(82, 24);
             this.label13.TabIndex = 18;
             this.label13.Text = "Xilo Đậu";
             // 
@@ -2228,10 +2205,9 @@ namespace Cuoiki
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(964, 108);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(1308, 123);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(56, 18);
+            this.label14.Size = new System.Drawing.Size(71, 24);
             this.label14.TabIndex = 18;
             this.label14.Text = "Xilo Cá";
             // 
@@ -2239,11 +2215,11 @@ namespace Cuoiki
             // 
             this.textBox4.BackColor = System.Drawing.Color.Blue;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(436, 27);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox4.Location = new System.Drawing.Point(581, 33);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(524, 60);
+            this.textBox4.Size = new System.Drawing.Size(699, 74);
             this.textBox4.TabIndex = 21;
             // 
             // TimerRead
@@ -2262,10 +2238,10 @@ namespace Cuoiki
             this.stValveScale1.Category = "1VLV.cat2";
             this.stValveScale1.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stValveScale1.DebugData"));
             this.stValveScale1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stValveScale1.Location = new System.Drawing.Point(513, 484);
-            this.stValveScale1.Margin = new System.Windows.Forms.Padding(2);
+            this.stValveScale1.Location = new System.Drawing.Point(684, 596);
+            this.stValveScale1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stValveScale1.Name = "stValveScale1";
-            this.stValveScale1.Size = new System.Drawing.Size(40, 41);
+            this.stValveScale1.Size = new System.Drawing.Size(53, 50);
             this.stValveScale1.Stretch = true;
             this.stValveScale1.SymbolHandle = ((long)(1031039882));
             this.stValveScale1.TabIndex = 10;
@@ -2282,10 +2258,10 @@ namespace Cuoiki
             this.stValveScale2.Category = "1VLV.cat2";
             this.stValveScale2.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stValveScale2.DebugData"));
             this.stValveScale2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stValveScale2.Location = new System.Drawing.Point(722, 484);
-            this.stValveScale2.Margin = new System.Windows.Forms.Padding(2);
+            this.stValveScale2.Location = new System.Drawing.Point(963, 596);
+            this.stValveScale2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stValveScale2.Name = "stValveScale2";
-            this.stValveScale2.Size = new System.Drawing.Size(40, 41);
+            this.stValveScale2.Size = new System.Drawing.Size(53, 50);
             this.stValveScale2.Stretch = true;
             this.stValveScale2.SymbolHandle = ((long)(1031039882));
             this.stValveScale2.TabIndex = 10;
@@ -2307,10 +2283,10 @@ namespace Cuoiki
             this.standardControl45.Category = "1PIPE.cat2";
             this.standardControl45.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl45.DebugData"));
             this.standardControl45.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl45.Location = new System.Drawing.Point(652, 664);
-            this.standardControl45.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl45.Location = new System.Drawing.Point(869, 817);
+            this.standardControl45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl45.Name = "standardControl45";
-            this.standardControl45.Size = new System.Drawing.Size(19, 107);
+            this.standardControl45.Size = new System.Drawing.Size(25, 132);
             this.standardControl45.Stretch = true;
             this.standardControl45.SymbolHandle = ((long)(1088408125));
             this.standardControl45.TabIndex = 10;
@@ -2327,10 +2303,10 @@ namespace Cuoiki
             this.stValveMixTank.Category = "1VLV.cat2";
             this.stValveMixTank.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stValveMixTank.DebugData"));
             this.stValveMixTank.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stValveMixTank.Location = new System.Drawing.Point(686, 755);
-            this.stValveMixTank.Margin = new System.Windows.Forms.Padding(2);
+            this.stValveMixTank.Location = new System.Drawing.Point(915, 929);
+            this.stValveMixTank.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stValveMixTank.Name = "stValveMixTank";
-            this.stValveMixTank.Size = new System.Drawing.Size(46, 32);
+            this.stValveMixTank.Size = new System.Drawing.Size(61, 39);
             this.stValveMixTank.Stretch = true;
             this.stValveMixTank.SymbolHandle = ((long)(1031039882));
             this.stValveMixTank.TabIndex = 10;
@@ -2352,10 +2328,10 @@ namespace Cuoiki
             this.standardControl50.Category = "1PIPE.cat2";
             this.standardControl50.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl50.DebugData"));
             this.standardControl50.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl50.Location = new System.Drawing.Point(652, 755);
-            this.standardControl50.Margin = new System.Windows.Forms.Padding(2);
+            this.standardControl50.Location = new System.Drawing.Point(869, 929);
+            this.standardControl50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standardControl50.Name = "standardControl50";
-            this.standardControl50.Size = new System.Drawing.Size(38, 32);
+            this.standardControl50.Size = new System.Drawing.Size(51, 39);
             this.standardControl50.Stretch = true;
             this.standardControl50.SymbolHandle = ((long)(328113829));
             this.standardControl50.TabIndex = 10;
@@ -2365,10 +2341,9 @@ namespace Cuoiki
             this.lbTimer.AutoSize = true;
             this.lbTimer.BackColor = System.Drawing.Color.White;
             this.lbTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.lbTimer.Location = new System.Drawing.Point(1304, 568);
-            this.lbTimer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTimer.Location = new System.Drawing.Point(1739, 699);
             this.lbTimer.Name = "lbTimer";
-            this.lbTimer.Size = new System.Drawing.Size(44, 18);
+            this.lbTimer.Size = new System.Drawing.Size(55, 24);
             this.lbTimer.TabIndex = 18;
             this.lbTimer.Text = "0.000";
             // 
@@ -2377,10 +2352,9 @@ namespace Cuoiki
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.White;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label23.Location = new System.Drawing.Point(1160, 568);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Location = new System.Drawing.Point(1547, 699);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(98, 18);
+            this.label23.Size = new System.Drawing.Size(126, 24);
             this.label23.TabIndex = 18;
             this.label23.Text = "Thời gian trộn";
             // 
@@ -2389,10 +2363,9 @@ namespace Cuoiki
             this.abc.AutoSize = true;
             this.abc.BackColor = System.Drawing.Color.White;
             this.abc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.abc.Location = new System.Drawing.Point(1372, 568);
-            this.abc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.abc.Location = new System.Drawing.Point(1829, 699);
             this.abc.Name = "abc";
-            this.abc.Size = new System.Drawing.Size(38, 18);
+            this.abc.Size = new System.Drawing.Size(47, 24);
             this.abc.TabIndex = 18;
             this.abc.Text = "Giây";
             // 
@@ -2401,10 +2374,9 @@ namespace Cuoiki
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.White;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label22.Location = new System.Drawing.Point(1160, 391);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Location = new System.Drawing.Point(1547, 481);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(98, 18);
+            this.label22.Size = new System.Drawing.Size(126, 24);
             this.label22.TabIndex = 18;
             this.label22.Text = "Thời gian trộn";
             // 
@@ -2413,19 +2385,18 @@ namespace Cuoiki
             this.zxs.AutoSize = true;
             this.zxs.BackColor = System.Drawing.Color.White;
             this.zxs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.zxs.Location = new System.Drawing.Point(1377, 393);
-            this.zxs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.zxs.Location = new System.Drawing.Point(1836, 484);
             this.zxs.Name = "zxs";
-            this.zxs.Size = new System.Drawing.Size(102, 18);
+            this.zxs.Size = new System.Drawing.Size(126, 24);
             this.zxs.TabIndex = 18;
             this.zxs.Text = "Giờ-Phút-Giây";
             // 
             // txtInputHour
             // 
-            this.txtInputHour.Location = new System.Drawing.Point(1264, 393);
-            this.txtInputHour.Margin = new System.Windows.Forms.Padding(2);
+            this.txtInputHour.Location = new System.Drawing.Point(1685, 484);
+            this.txtInputHour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtInputHour.Name = "txtInputHour";
-            this.txtInputHour.Size = new System.Drawing.Size(32, 20);
+            this.txtInputHour.Size = new System.Drawing.Size(41, 22);
             this.txtInputHour.TabIndex = 20;
             this.txtInputHour.Text = "0";
             // 
@@ -2434,10 +2405,9 @@ namespace Cuoiki
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.White;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label24.Location = new System.Drawing.Point(1161, 592);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Location = new System.Drawing.Point(1548, 729);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(78, 18);
+            this.label24.Size = new System.Drawing.Size(101, 24);
             this.label24.TabIndex = 18;
             this.label24.Text = "Lượng gạo";
             // 
@@ -2446,10 +2416,9 @@ namespace Cuoiki
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.White;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label25.Location = new System.Drawing.Point(1162, 614);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Location = new System.Drawing.Point(1549, 756);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(78, 18);
+            this.label25.Size = new System.Drawing.Size(102, 24);
             this.label25.TabIndex = 18;
             this.label25.Text = "Lượng ngô";
             // 
@@ -2458,10 +2427,9 @@ namespace Cuoiki
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.White;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label26.Location = new System.Drawing.Point(1162, 640);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Location = new System.Drawing.Point(1549, 788);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(77, 18);
+            this.label26.Size = new System.Drawing.Size(99, 24);
             this.label26.TabIndex = 18;
             this.label26.Text = "Lượng sắn";
             // 
@@ -2470,10 +2438,9 @@ namespace Cuoiki
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.White;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label29.Location = new System.Drawing.Point(1162, 665);
-            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label29.Location = new System.Drawing.Point(1549, 818);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(77, 18);
+            this.label29.Size = new System.Drawing.Size(102, 24);
             this.label29.TabIndex = 18;
             this.label29.Text = "Lượng đậu";
             // 
@@ -2482,10 +2449,9 @@ namespace Cuoiki
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.White;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label30.Location = new System.Drawing.Point(1161, 692);
-            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label30.Location = new System.Drawing.Point(1548, 852);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(69, 18);
+            this.label30.Size = new System.Drawing.Size(89, 24);
             this.label30.TabIndex = 18;
             this.label30.Text = "Lượng cá";
             // 
@@ -2494,10 +2460,9 @@ namespace Cuoiki
             this.label32.AutoSize = true;
             this.label32.BackColor = System.Drawing.Color.White;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label32.Location = new System.Drawing.Point(1376, 592);
-            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label32.Location = new System.Drawing.Point(1835, 729);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(26, 18);
+            this.label32.Size = new System.Drawing.Size(33, 24);
             this.label32.TabIndex = 18;
             this.label32.Text = "Kg";
             // 
@@ -2506,10 +2471,9 @@ namespace Cuoiki
             this.label33.AutoSize = true;
             this.label33.BackColor = System.Drawing.Color.White;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label33.Location = new System.Drawing.Point(1376, 614);
-            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label33.Location = new System.Drawing.Point(1835, 756);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(26, 18);
+            this.label33.Size = new System.Drawing.Size(33, 24);
             this.label33.TabIndex = 18;
             this.label33.Text = "Kg";
             // 
@@ -2518,10 +2482,9 @@ namespace Cuoiki
             this.label34.AutoSize = true;
             this.label34.BackColor = System.Drawing.Color.White;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label34.Location = new System.Drawing.Point(1376, 641);
-            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label34.Location = new System.Drawing.Point(1835, 789);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(26, 18);
+            this.label34.Size = new System.Drawing.Size(33, 24);
             this.label34.TabIndex = 18;
             this.label34.Text = "Kg";
             // 
@@ -2530,10 +2493,9 @@ namespace Cuoiki
             this.label36.AutoSize = true;
             this.label36.BackColor = System.Drawing.Color.White;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label36.Location = new System.Drawing.Point(1376, 665);
-            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label36.Location = new System.Drawing.Point(1835, 818);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(26, 18);
+            this.label36.Size = new System.Drawing.Size(33, 24);
             this.label36.TabIndex = 18;
             this.label36.Text = "Kg";
             // 
@@ -2542,28 +2504,27 @@ namespace Cuoiki
             this.label37.AutoSize = true;
             this.label37.BackColor = System.Drawing.Color.White;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label37.Location = new System.Drawing.Point(1377, 693);
-            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label37.Location = new System.Drawing.Point(1836, 853);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(26, 18);
+            this.label37.Size = new System.Drawing.Size(33, 24);
             this.label37.TabIndex = 18;
             this.label37.Text = "Kg";
             // 
             // txtInputMins
             // 
-            this.txtInputMins.Location = new System.Drawing.Point(1300, 393);
-            this.txtInputMins.Margin = new System.Windows.Forms.Padding(2);
+            this.txtInputMins.Location = new System.Drawing.Point(1733, 484);
+            this.txtInputMins.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtInputMins.Name = "txtInputMins";
-            this.txtInputMins.Size = new System.Drawing.Size(32, 20);
+            this.txtInputMins.Size = new System.Drawing.Size(41, 22);
             this.txtInputMins.TabIndex = 20;
             this.txtInputMins.Text = "0";
             // 
             // txtInputSecond
             // 
-            this.txtInputSecond.Location = new System.Drawing.Point(1335, 393);
-            this.txtInputSecond.Margin = new System.Windows.Forms.Padding(2);
+            this.txtInputSecond.Location = new System.Drawing.Point(1780, 484);
+            this.txtInputSecond.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtInputSecond.Name = "txtInputSecond";
-            this.txtInputSecond.Size = new System.Drawing.Size(32, 20);
+            this.txtInputSecond.Size = new System.Drawing.Size(41, 22);
             this.txtInputSecond.TabIndex = 20;
             this.txtInputSecond.Text = "0";
             // 
@@ -2572,10 +2533,9 @@ namespace Cuoiki
             this.lbInputRice.AutoSize = true;
             this.lbInputRice.BackColor = System.Drawing.Color.White;
             this.lbInputRice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.lbInputRice.Location = new System.Drawing.Point(1304, 593);
-            this.lbInputRice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbInputRice.Location = new System.Drawing.Point(1739, 730);
             this.lbInputRice.Name = "lbInputRice";
-            this.lbInputRice.Size = new System.Drawing.Size(44, 18);
+            this.lbInputRice.Size = new System.Drawing.Size(55, 24);
             this.lbInputRice.TabIndex = 18;
             this.lbInputRice.Text = "0.000";
             // 
@@ -2584,10 +2544,9 @@ namespace Cuoiki
             this.lbInputCorn.AutoSize = true;
             this.lbInputCorn.BackColor = System.Drawing.Color.White;
             this.lbInputCorn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.lbInputCorn.Location = new System.Drawing.Point(1304, 617);
-            this.lbInputCorn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbInputCorn.Location = new System.Drawing.Point(1739, 759);
             this.lbInputCorn.Name = "lbInputCorn";
-            this.lbInputCorn.Size = new System.Drawing.Size(44, 18);
+            this.lbInputCorn.Size = new System.Drawing.Size(55, 24);
             this.lbInputCorn.TabIndex = 18;
             this.lbInputCorn.Text = "0.000";
             // 
@@ -2596,10 +2555,9 @@ namespace Cuoiki
             this.lbInputCassava.AutoSize = true;
             this.lbInputCassava.BackColor = System.Drawing.Color.White;
             this.lbInputCassava.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.lbInputCassava.Location = new System.Drawing.Point(1304, 643);
-            this.lbInputCassava.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbInputCassava.Location = new System.Drawing.Point(1739, 791);
             this.lbInputCassava.Name = "lbInputCassava";
-            this.lbInputCassava.Size = new System.Drawing.Size(44, 18);
+            this.lbInputCassava.Size = new System.Drawing.Size(55, 24);
             this.lbInputCassava.TabIndex = 18;
             this.lbInputCassava.Text = "0.000";
             // 
@@ -2608,10 +2566,9 @@ namespace Cuoiki
             this.lbInputBean.AutoSize = true;
             this.lbInputBean.BackColor = System.Drawing.Color.White;
             this.lbInputBean.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.lbInputBean.Location = new System.Drawing.Point(1304, 665);
-            this.lbInputBean.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbInputBean.Location = new System.Drawing.Point(1739, 818);
             this.lbInputBean.Name = "lbInputBean";
-            this.lbInputBean.Size = new System.Drawing.Size(44, 18);
+            this.lbInputBean.Size = new System.Drawing.Size(55, 24);
             this.lbInputBean.TabIndex = 18;
             this.lbInputBean.Text = "0.000";
             // 
@@ -2620,10 +2577,9 @@ namespace Cuoiki
             this.lbInputFish.AutoSize = true;
             this.lbInputFish.BackColor = System.Drawing.Color.White;
             this.lbInputFish.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.lbInputFish.Location = new System.Drawing.Point(1304, 692);
-            this.lbInputFish.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbInputFish.Location = new System.Drawing.Point(1739, 852);
             this.lbInputFish.Name = "lbInputFish";
-            this.lbInputFish.Size = new System.Drawing.Size(44, 18);
+            this.lbInputFish.Size = new System.Drawing.Size(55, 24);
             this.lbInputFish.TabIndex = 18;
             this.lbInputFish.Text = "0.000";
             // 
@@ -2632,10 +2588,9 @@ namespace Cuoiki
             this.label38.AutoSize = true;
             this.label38.BackColor = System.Drawing.Color.White;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label38.Location = new System.Drawing.Point(1376, 718);
-            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label38.Location = new System.Drawing.Point(1835, 884);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(38, 18);
+            this.label38.Size = new System.Drawing.Size(47, 24);
             this.label38.TabIndex = 18;
             this.label38.Text = "Giây";
             // 
@@ -2644,10 +2599,9 @@ namespace Cuoiki
             this.lbSetMixTime.AutoSize = true;
             this.lbSetMixTime.BackColor = System.Drawing.Color.White;
             this.lbSetMixTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.lbSetMixTime.Location = new System.Drawing.Point(1304, 718);
-            this.lbSetMixTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbSetMixTime.Location = new System.Drawing.Point(1739, 884);
             this.lbSetMixTime.Name = "lbSetMixTime";
-            this.lbSetMixTime.Size = new System.Drawing.Size(44, 18);
+            this.lbSetMixTime.Size = new System.Drawing.Size(55, 24);
             this.lbSetMixTime.TabIndex = 18;
             this.lbSetMixTime.Text = "0.000";
             // 
@@ -2656,10 +2610,9 @@ namespace Cuoiki
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.White;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label31.Location = new System.Drawing.Point(1160, 717);
-            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label31.Location = new System.Drawing.Point(1547, 882);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(115, 18);
+            this.label31.Size = new System.Drawing.Size(149, 24);
             this.label31.TabIndex = 18;
             this.label31.Text = "Thời gian cài đặt";
             // 
@@ -2675,11 +2628,11 @@ namespace Cuoiki
             this.stSensorMixTankLow.Category = "1SENS.cat2";
             this.stSensorMixTankLow.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stSensorMixTankLow.DebugData"));
             this.stSensorMixTankLow.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stSensorMixTankLow.Location = new System.Drawing.Point(530, 706);
-            this.stSensorMixTankLow.Margin = new System.Windows.Forms.Padding(2);
+            this.stSensorMixTankLow.Location = new System.Drawing.Point(707, 869);
+            this.stSensorMixTankLow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stSensorMixTankLow.Name = "stSensorMixTankLow";
             this.stSensorMixTankLow.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.stSensorMixTankLow.Size = new System.Drawing.Size(66, 33);
+            this.stSensorMixTankLow.Size = new System.Drawing.Size(88, 41);
             this.stSensorMixTankLow.SymbolHandle = ((long)(32604526));
             this.stSensorMixTankLow.TabIndex = 23;
             // 
@@ -2695,76 +2648,49 @@ namespace Cuoiki
             this.stSensorMixTankHight.Category = "1SENS.cat2";
             this.stSensorMixTankHight.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("stSensorMixTankHight.DebugData"));
             this.stSensorMixTankHight.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.stSensorMixTankHight.Location = new System.Drawing.Point(530, 604);
-            this.stSensorMixTankHight.Margin = new System.Windows.Forms.Padding(2);
+            this.stSensorMixTankHight.Location = new System.Drawing.Point(707, 743);
+            this.stSensorMixTankHight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stSensorMixTankHight.Name = "stSensorMixTankHight";
             this.stSensorMixTankHight.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.stSensorMixTankHight.Size = new System.Drawing.Size(66, 33);
+            this.stSensorMixTankHight.Size = new System.Drawing.Size(88, 41);
             this.stSensorMixTankHight.SymbolHandle = ((long)(32604526));
             this.stSensorMixTankHight.TabIndex = 23;
             // 
             // btSensorMixTankHight
             // 
-            this.btSensorMixTankHight.Location = new System.Drawing.Point(954, 670);
-            this.btSensorMixTankHight.Margin = new System.Windows.Forms.Padding(2);
+            this.btSensorMixTankHight.BackColor = System.Drawing.Color.Red;
+            this.btSensorMixTankHight.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSensorMixTankHight.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btSensorMixTankHight.Location = new System.Drawing.Point(630, 743);
+            this.btSensorMixTankHight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSensorMixTankHight.Name = "btSensorMixTankHight";
-            this.btSensorMixTankHight.Size = new System.Drawing.Size(134, 35);
+            this.btSensorMixTankHight.Size = new System.Drawing.Size(61, 43);
             this.btSensorMixTankHight.TabIndex = 24;
-            this.btSensorMixTankHight.Text = "SensorMixTankHight";
-            this.btSensorMixTankHight.UseVisualStyleBackColor = true;
+            this.btSensorMixTankHight.Text = "Hight";
+            this.btSensorMixTankHight.UseVisualStyleBackColor = false;
             this.btSensorMixTankHight.Click += new System.EventHandler(this.btSensorMixTankHight_Click);
             // 
             // btSensorMixTankLow
             // 
-            this.btSensorMixTankLow.Location = new System.Drawing.Point(954, 715);
-            this.btSensorMixTankLow.Margin = new System.Windows.Forms.Padding(2);
+            this.btSensorMixTankLow.BackColor = System.Drawing.Color.ForestGreen;
+            this.btSensorMixTankLow.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSensorMixTankLow.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btSensorMixTankLow.Location = new System.Drawing.Point(630, 866);
+            this.btSensorMixTankLow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSensorMixTankLow.Name = "btSensorMixTankLow";
-            this.btSensorMixTankLow.Size = new System.Drawing.Size(134, 35);
+            this.btSensorMixTankLow.Size = new System.Drawing.Size(61, 43);
             this.btSensorMixTankLow.TabIndex = 25;
-            this.btSensorMixTankLow.Text = "SensorMixTankLow";
-            this.btSensorMixTankLow.UseVisualStyleBackColor = true;
+            this.btSensorMixTankLow.Text = "Low";
+            this.btSensorMixTankLow.UseVisualStyleBackColor = false;
             this.btSensorMixTankLow.Click += new System.EventHandler(this.btSensorMixTankLow_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(910, 600);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(226, 164);
-            this.textBox5.TabIndex = 26;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.BackColor = System.Drawing.Color.Lime;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.label39.ForeColor = System.Drawing.Color.Blue;
-            this.label39.Location = new System.Drawing.Point(922, 609);
-            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(210, 24);
-            this.label39.TabIndex = 28;
-            this.label39.Text = "MÔ PHỎNG CẢM BIẾN";
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.Lime;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(910, 600);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(226, 38);
-            this.textBox6.TabIndex = 27;
             // 
             // connectIpBtn
             // 
             this.connectIpBtn.ForeColor = System.Drawing.Color.Black;
-            this.connectIpBtn.Location = new System.Drawing.Point(172, 728);
+            this.connectIpBtn.Location = new System.Drawing.Point(229, 896);
+            this.connectIpBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.connectIpBtn.Name = "connectIpBtn";
-            this.connectIpBtn.Size = new System.Drawing.Size(75, 23);
+            this.connectIpBtn.Size = new System.Drawing.Size(100, 28);
             this.connectIpBtn.TabIndex = 29;
             this.connectIpBtn.Text = "Connect";
             this.connectIpBtn.UseVisualStyleBackColor = true;
@@ -2775,9 +2701,10 @@ namespace Cuoiki
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.Color.Black;
-            this.label40.Location = new System.Drawing.Point(10, 731);
+            this.label40.Location = new System.Drawing.Point(13, 900);
+            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(28, 17);
+            this.label40.Size = new System.Drawing.Size(34, 20);
             this.label40.TabIndex = 31;
             this.label40.Text = "IP :";
             // 
@@ -2785,9 +2712,10 @@ namespace Cuoiki
             // 
             this.Disconnected.AutoSize = true;
             this.Disconnected.ForeColor = System.Drawing.Color.Red;
-            this.Disconnected.Location = new System.Drawing.Point(11, 758);
+            this.Disconnected.Location = new System.Drawing.Point(15, 933);
+            this.Disconnected.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Disconnected.Name = "Disconnected";
-            this.Disconnected.Size = new System.Drawing.Size(61, 13);
+            this.Disconnected.Size = new System.Drawing.Size(78, 17);
             this.Disconnected.TabIndex = 32;
             this.Disconnected.Text = "Disconnect";
             // 
@@ -2795,33 +2723,73 @@ namespace Cuoiki
             // 
             this.Connected.AutoSize = true;
             this.Connected.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.Connected.Location = new System.Drawing.Point(11, 758);
+            this.Connected.Location = new System.Drawing.Point(15, 933);
+            this.Connected.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Connected.Name = "Connected";
-            this.Connected.Size = new System.Drawing.Size(59, 13);
+            this.Connected.Size = new System.Drawing.Size(76, 17);
             this.Connected.TabIndex = 33;
             this.Connected.Text = "Connected";
             this.Connected.Visible = false;
             // 
             // ipEntryBox
             // 
-            this.ipEntryBox.Location = new System.Drawing.Point(44, 730);
+            this.ipEntryBox.Location = new System.Drawing.Point(59, 898);
+            this.ipEntryBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ipEntryBox.Name = "ipEntryBox";
-            this.ipEntryBox.Size = new System.Drawing.Size(119, 20);
+            this.ipEntryBox.Size = new System.Drawing.Size(157, 22);
             this.ipEntryBox.TabIndex = 35;
+            // 
+            // progressBarOfRice
+            // 
+            this.progressBarOfRice.Location = new System.Drawing.Point(29, 159);
+            this.progressBarOfRice.Name = "progressBarOfRice";
+            this.progressBarOfRice.Size = new System.Drawing.Size(245, 15);
+            this.progressBarOfRice.TabIndex = 36;
+            // 
+            // progressBarCorn
+            // 
+            this.progressBarCorn.Location = new System.Drawing.Point(315, 159);
+            this.progressBarCorn.Name = "progressBarCorn";
+            this.progressBarCorn.Size = new System.Drawing.Size(327, 15);
+            this.progressBarCorn.TabIndex = 37;
+            // 
+            // progressBarOfCassava
+            // 
+            this.progressBarOfCassava.Location = new System.Drawing.Point(691, 165);
+            this.progressBarOfCassava.Name = "progressBarOfCassava";
+            this.progressBarOfCassava.Size = new System.Drawing.Size(157, 15);
+            this.progressBarOfCassava.TabIndex = 38;
+            // 
+            // progressBarOfBean
+            // 
+            this.progressBarOfBean.Location = new System.Drawing.Point(872, 159);
+            this.progressBarOfBean.Name = "progressBarOfBean";
+            this.progressBarOfBean.Size = new System.Drawing.Size(245, 15);
+            this.progressBarOfBean.TabIndex = 39;
+            // 
+            // progressBarOfFish
+            // 
+            this.progressBarOfFish.Location = new System.Drawing.Point(1163, 159);
+            this.progressBarOfFish.Name = "progressBarOfFish";
+            this.progressBarOfFish.Size = new System.Drawing.Size(327, 15);
+            this.progressBarOfFish.TabIndex = 40;
             // 
             // MainHMI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1443, 801);
+            this.ClientSize = new System.Drawing.Size(1924, 986);
+            this.Controls.Add(this.progressBarOfFish);
+            this.Controls.Add(this.progressBarOfBean);
+            this.Controls.Add(this.progressBarOfCassava);
+            this.Controls.Add(this.progressBarCorn);
+            this.Controls.Add(this.progressBarOfRice);
             this.Controls.Add(this.ipEntryBox);
             this.Controls.Add(this.Connected);
             this.Controls.Add(this.Disconnected);
             this.Controls.Add(this.label40);
             this.Controls.Add(this.connectIpBtn);
-            this.Controls.Add(this.label39);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.btSensorMixTankLow);
             this.Controls.Add(this.btSensorMixTankHight);
             this.Controls.Add(this.stSensorMixTankHight);
@@ -2960,9 +2928,8 @@ namespace Cuoiki
             this.Controls.Add(this.standardControl1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
             this.ForeColor = System.Drawing.Color.Red;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainHMI";
             this.Text = "MainHMI";
             this.TopMost = true;
@@ -3185,13 +3152,15 @@ namespace Cuoiki
         private SymbolFactoryDotNet.StandardControl stSensorMixTankHight;
         private System.Windows.Forms.Button btSensorMixTankHight;
         private System.Windows.Forms.Button btSensorMixTankLow;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button connectIpBtn;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label Disconnected;
         private System.Windows.Forms.Label Connected;
         private System.Windows.Forms.TextBox ipEntryBox;
+        private System.Windows.Forms.ProgressBar progressBarOfRice;
+        private System.Windows.Forms.ProgressBar progressBarCorn;
+        private System.Windows.Forms.ProgressBar progressBarOfCassava;
+        private System.Windows.Forms.ProgressBar progressBarOfBean;
+        private System.Windows.Forms.ProgressBar progressBarOfFish;
     }
 }

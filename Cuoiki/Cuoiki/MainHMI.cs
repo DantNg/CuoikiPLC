@@ -30,7 +30,13 @@ namespace Cuoiki
         double doSetMixTime;
         double doActMixTime;
         int[] SensorMixTank = new int[3];
-        
+       
+        int currentValueOfProcess1 ;
+        int beforeValueOfProcess1 ;
+        int currentValueOfProcess2 ;
+        int beforeValueOfProcess2 ;
+
+       
         private void connectIpBtn_Click(object sender, EventArgs e)
         {
             autoComplete.Add(ipEntryBox.Text);
@@ -51,6 +57,7 @@ namespace Cuoiki
                 
                 myPlc = new Plc(CpuType.S71200, ipEntryBox.Text, 0, 1);
                 myPlc.Open();
+
                 TimerRead.Enabled = true;
                 TimerRead.Interval = 300;
             }
@@ -58,18 +65,26 @@ namespace Cuoiki
         public MainHMI()
         {
             InitializeComponent();
+            //progressBarOfRice.Minimum = 0;
+            //progressBarCorn.Minimum = 0;
+            //progressBarOfCassava.Minimum = 0;
+            //progressBarOfBean.Minimum = 0;
+            //progressBarOfFish.Minimum = 0;
+            ////display on process bar
+            //progressBarOfRice.Maximum = 100;
+            //progressBarCorn.Maximum = 100;
+            //progressBarOfCassava.Maximum = 100;
+            //progressBarOfBean.Maximum = 100;
+            //progressBarOfFish.Maximum = 100;
         }
-
+        
         private void MainHMI_Load(object sender, EventArgs e)
         {
             ipEntryBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             ipEntryBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
             //auto.Add(textBox1.Text);
             ipEntryBox.AutoCompleteCustomSource = autoComplete;
-            if (isConnected)
-            {
-               
-            }
+          
         }
 
         private void TimerRead_Tick(object sender, EventArgs e)
@@ -275,6 +290,38 @@ namespace Cuoiki
                 lbInputFish.Text = Math.Round(ReadInput.InputFish, 3).ToString();
                 doSetMixTime = Convert.ToDouble(myPlc.Read("DB3.DBD20")) / 1000;
                 lbSetMixTime.Text = doSetMixTime.ToString();
+
+                //progressBarOfRice.Value += 1;
+                #endregion
+                
+                #region display on process bar
+
+                currentValueOfProcess1 = Convert.ToInt32(Double.Parse(lbScale1.Text));
+                currentValueOfProcess2 = Convert.ToInt32(Double.Parse(lbScale2.Text));
+                int stepProcess1 = currentValueOfProcess1 - beforeValueOfProcess1;
+                int stepProcess2 = currentValueOfProcess2 - beforeValueOfProcess2;
+                if (stXiloRice1.DiscreteValue1 || stXiloRice2.DiscreteValue1 || stXiloRice3.DiscreteValue1)
+                {             
+                    progressBarOfRice.Value += stepProcess1;
+                }
+                else if(stXiloCorn4.DiscreteValue1 || stXiloCorn5.DiscreteValue1 || stXiloCorn6.DiscreteValue1 ||stXiloCorn7.DiscreteValue1)
+                {
+                    progressBarCorn.Value += stepProcess1;
+                }   
+                else if( stXiloCassava8.DiscreteValue1 || stXiloCassava9.DiscreteValue1)
+                {
+                    progressBarOfCassava.Value += stepProcess1;
+                }   
+                else if(stXiloBean10.DiscreteValue1 || stXiloBean11.DiscreteValue1 || stXiloBean12.DiscreteValue1)
+                {
+                    progressBarOfBean.Value += stepProcess2;
+                } 
+                else if(stXiloFish13.DiscreteValue1 || stXiloFish14.DiscreteValue1 || stXiloFish15.DiscreteValue1 ||stXiloFish16.DiscreteValue1)
+                {
+                    progressBarOfFish.Value += stepProcess2;
+                }
+                beforeValueOfProcess1 = currentValueOfProcess1;
+                beforeValueOfProcess2 = currentValueOfProcess2;
                 #endregion
 
                 #region Doc trang thai cam bien noi tron
@@ -322,6 +369,19 @@ namespace Cuoiki
         {
             if (isConnected)
             {
+               //comperison Xilo
+                
+               currentValueOfProcess1 = Convert.ToInt32(Double.Parse(lbScale1.Text));
+               beforeValueOfProcess1 = 0;
+               currentValueOfProcess2 = Convert.ToInt32(Double.Parse(lbScale2.Text));
+               beforeValueOfProcess2 = 0;
+
+                progressBarOfRice.Maximum = Convert.ToInt32(double.Parse(txtInputRice.Text));
+                progressBarCorn.Maximum = Convert.ToInt32(double.Parse(txtInputCorn.Text));
+                progressBarOfCassava.Maximum = Convert.ToInt32(double.Parse(txtInputCassava.Text));
+                progressBarOfBean.Maximum = Convert.ToInt32(double.Parse(txtInputBean.Text));
+                progressBarOfFish.Maximum = Convert.ToInt32(double.Parse(txtInputFish.Text));
+
                 myPlc.Write("DB3.DBD0", double.Parse(txtInputRice.Text));
                 myPlc.Write("DB3.DBD4", double.Parse(txtInputCorn.Text));
                 myPlc.Write("DB3.DBD8", double.Parse(txtInputCassava.Text));
