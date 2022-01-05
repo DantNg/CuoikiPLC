@@ -24,6 +24,7 @@ namespace Cuoiki
         {
             try
             {
+                //Truy cập đến sql server
                 if (strcon.State == ConnectionState.Closed)
                     strcon.Open();
                 SqlCommand cmd = new SqlCommand("select * from ManagerAccount where Username='" + txtUsername.Text + "' and Password='" + txtPassword.Text + "' ", strcon);

@@ -26,8 +26,10 @@ namespace Cuoiki
 
         private void bt_Click(object sender, EventArgs e)
         {
+
             if (txtPassword.Text == txtConfirm.Text)
             {
+                //Truy cập vào sql
                 try
                 {
                     if (strcon.State == ConnectionState.Closed)
